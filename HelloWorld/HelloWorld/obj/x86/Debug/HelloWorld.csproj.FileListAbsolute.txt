@@ -1,0 +1,11 @@
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\HelloWorld.Form1.resources
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\HelloWorld.exe
+C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\HelloWorld.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.pdb
