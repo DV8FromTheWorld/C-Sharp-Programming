@@ -1,0 +1,6 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\bin\x86\Debug\MoodLight.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\bin\x86\Debug\MoodLight.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\obj\x86\Debug\MoodLight.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\obj\x86\Debug\MoodLight.pdb
