@@ -1,0 +1,10 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\bin\x86\Debug\Content\Background.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\bin\x86\Debug\MyFirstGame.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\bin\x86\Debug\MyFirstGame.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\obj\x86\Debug\MyFirstGame.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\obj\x86\Debug\MyFirstGame.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\bin\x86\Debug\Content\mario.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\bin\x86\Debug\Content\boundingBoxLimit.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MyFirstGame\MyFirstGame\MyFirstGame\bin\x86\Debug\Content\myFont.xnb
