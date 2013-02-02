@@ -9,3 +9,5 @@ C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\Hell
 C:\Users\GAKeener\AppData\Local\Temporary Projects\HelloWorld\obj\x86\Debug\HelloWorld.pdb
 \\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.exe
 \\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.pdb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.exe
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.pdb

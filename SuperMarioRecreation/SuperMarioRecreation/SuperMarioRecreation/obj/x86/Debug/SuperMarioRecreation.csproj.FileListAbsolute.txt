@@ -1,0 +1,8 @@
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\bin\x86\Debug\SuperMarioRecreation.exe
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\bin\x86\Debug\SuperMarioRecreation.pdb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\SuperMarioRecreation.exe
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\SuperMarioRecreation.pdb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\bin\x86\Debug\Content\world 1-1.xnb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\bin\x86\Debug\Content\myFont.xnb
