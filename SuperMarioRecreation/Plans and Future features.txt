@@ -1,0 +1,18 @@
+Just writing my ideas down somewhere for later use.
+
+########################
+# 2 player support
+########################
+2 player support could be achieved by having the 2nd player play as luigi.  
+I have the sprites for that, so it wont be a problem.  The second player's input can be found 
+with PlayerIndex.Two.  Probably will be done for Xbox only.  Not sure if I want to have
+both players playing at the same time, or individually.  Could add extra modes for like "vs" to see who can get the most points per level
+and keep track of wins?
+
+#########################
+# World Loading
+#########################
+Create and interface as a base class for all worlds.  Have each world know about its own
+bounding boxes, currently background, etc.  Have different arrays for specific bounding boxes (tubes vs floor)
+
+

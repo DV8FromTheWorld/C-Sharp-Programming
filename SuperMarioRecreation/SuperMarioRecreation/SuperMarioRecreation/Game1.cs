@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using SuperMarioRecreation.Worlds;
 
 namespace SuperMarioRecreation
 {
@@ -18,6 +19,10 @@ namespace SuperMarioRecreation
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        BaseWorld currentWorld;
+        BaseWorld[] worldList;
+        Boolean firstTry = true;
 
         Point backPos;
         Boolean underGround;
@@ -58,10 +63,9 @@ namespace SuperMarioRecreation
            // undergroundScreenDisplay.Height = 100;
           //  undergroundScreenDisplay.Width = 30;
            // undergroundScreenDisplay;
-            background = Content.Load<Texture2D>("world 1-1");
-            graphics.PreferredBackBufferHeight = (background.Height+16);
-            graphics.PreferredBackBufferWidth = 765;
-            graphics.ApplyChanges();
+            worldList = new BaseWorld[] { new World1_1() };
+
+            //background = Content.Load<Texture2D>("Worlds/World1-1/world 1-1");
         }
 
         /// <summary>
@@ -93,6 +97,15 @@ namespace SuperMarioRecreation
                 backPos.Y -= 4;
             if (keyDown(Keys.Down))
                 backPos.Y += 4;
+            if (firstTry)
+            {
+                worldList[0].initWorld();
+                background = worldList[0].getCurrentBackground();
+                graphics.PreferredBackBufferHeight = (background.Height + 16);
+                graphics.PreferredBackBufferWidth = 765;
+                graphics.ApplyChanges();
+            }
+
 
             base.Update(gameTime);
         }
