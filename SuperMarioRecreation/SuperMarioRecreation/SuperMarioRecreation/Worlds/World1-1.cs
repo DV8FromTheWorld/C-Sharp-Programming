@@ -10,28 +10,31 @@ namespace SuperMarioRecreation.Worlds
 {
     class World1_1 : BaseWorld
     {
-        Rectangle[] tubeBBoxes;
-        Rectangle[] floorBBoxes;
+        Rectangle[] tubeBBoxes;         //TODO:  Tube BBoxes (will be used for level and world changes)
+        Rectangle[] floorBBoxes;        //TODO:  Floor BBoxes (needs to include tubeBBoxes)
 
-        Texture2D[] backgrounds;
-        Texture2D aboveGround;
+        Texture2D[] backgrounds;        //Array of backgrounds for current world
+        Texture2D aboveground;          
+        Texture2D underground;
         Texture2D currentBackground;
 
-        Rectangle backgroundPosition;
+        Point backgroundPosition;
         ContentManager content;
 
         public void initWorld()
         {
             content = Program.baseGame.Content;
-            aboveGround = content.Load<Texture2D>("Worlds/World1-1/world 1-1");
+            aboveground = content.Load<Texture2D>("Worlds/World1-1/overworld");
+            underground = content.Load<Texture2D>("Worlds/World1-1/underground");
+            backgroundPosition = new Point(0, 0);
 
-            backgrounds = new Texture2D[] { aboveGround };
+            backgrounds = new Texture2D[] { aboveground, underground };
             currentBackground = backgrounds[0];
         }
 
         public void initBBoxes()
         {
-            throw new NotImplementedException();
+
         }
 
         public Rectangle[] getTubeBBoxes()
@@ -49,10 +52,35 @@ namespace SuperMarioRecreation.Worlds
             return currentBackground;
         }
 
-        public Rectangle getCurrentBackgroundPos()
+        public void tubeLevelChange(int tubeIndex)
         {
-            return backgroundPosition;
+            switch (tubeIndex)
+            {
+                case 0:
+                    currentBackground = underground;
+                    backgroundPosition = new Point(0, 0);
+                    break;
+                case 1:
+                    currentBackground = aboveground;
+                    backgroundPosition = new Point(0, 0);
+                    break;
+                default:
+                    throw new IndexOutOfRangeException();
+            }
         }
 
+
+        public void worldChange(int worldIndex)
+        {
+            if (worldIndex == 0)
+            {
+                //TODO: World change to next world (World 1-2)
+            }
+            else
+            {
+                throw new IndexOutOfRangeException("World index provided to worldChange() for world 1-1 was in in the known worlds that could be changed too");
+
+            }
+        }
     }
 }

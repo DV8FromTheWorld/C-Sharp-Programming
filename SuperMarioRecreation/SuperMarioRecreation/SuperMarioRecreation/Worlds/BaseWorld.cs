@@ -11,12 +11,12 @@ namespace SuperMarioRecreation.Worlds
     {
         void initWorld();
         void initBBoxes();
+        void tubeLevelChange(int tubeIndex);
+        void worldChange(int worldIndex);
 
         Rectangle[] getTubeBBoxes();
         Rectangle[] getFloorBBoxes();
 
-
         Texture2D getCurrentBackground();
-        Rectangle getCurrentBackgroundPos();
     }
 }

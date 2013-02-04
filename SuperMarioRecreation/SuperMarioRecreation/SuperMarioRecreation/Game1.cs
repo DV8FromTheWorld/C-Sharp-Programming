@@ -24,12 +24,11 @@ namespace SuperMarioRecreation
         BaseWorld[] worldList;
         Boolean firstTry = true;
 
+        SpriteFont myFont;
         Point backPos;
-        Boolean underGround;
-        Viewport undergroundScreenDisplay;
-        Viewport abovegroundScreenDisplay;
 
         Texture2D background;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -45,8 +44,9 @@ namespace SuperMarioRecreation
         /// </summary>
         protected override void Initialize()
         {
-            backPos.X = 0;
-            backPos.Y = 0;
+            backPos.X = 0;      //Changes as mario moves due to the background needing to move.
+            backPos.Y = 0;      //Should never change (otherwise it will render the image too far down the window.)
+
             base.Initialize();
         }
 
@@ -56,16 +56,13 @@ namespace SuperMarioRecreation
         /// </summary>
         protected override void LoadContent()
         {
+            graphics.PreferredBackBufferHeight = 696;       //Defines the size of the window (Height).
+            graphics.PreferredBackBufferWidth = 765;        //Defines the size of the window (Width).
+            graphics.ApplyChanges();                        //Actually sets the window to the size we defined.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            underGround = false;
-            abovegroundScreenDisplay = graphics.GraphicsDevice.Viewport;
-            undergroundScreenDisplay = abovegroundScreenDisplay;
-           // undergroundScreenDisplay.Height = 100;
-          //  undergroundScreenDisplay.Width = 30;
-           // undergroundScreenDisplay;
-            worldList = new BaseWorld[] { new World1_1() };
 
-            //background = Content.Load<Texture2D>("Worlds/World1-1/world 1-1");
+            myFont = Content.Load<SpriteFont>("myFont");
+            worldList = new BaseWorld[] { new World1_1() };
         }
 
         /// <summary>
@@ -99,13 +96,11 @@ namespace SuperMarioRecreation
                 backPos.Y += 4;
             if (firstTry)
             {
-                worldList[0].initWorld();
-                background = worldList[0].getCurrentBackground();
-                graphics.PreferredBackBufferHeight = (background.Height + 16);
-                graphics.PreferredBackBufferWidth = 765;
-                graphics.ApplyChanges();
+                currentWorld = worldList[0];
+                currentWorld.initWorld();
+                background = currentWorld.getCurrentBackground();
+                firstTry = false;
             }
-
 
             base.Update(gameTime);
         }
@@ -118,7 +113,8 @@ namespace SuperMarioRecreation
         {
             GraphicsDevice.Clear(Color.Black);
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
-            drawBackground(spriteBatch);
+            drawBackground();
+            print();
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -136,15 +132,16 @@ namespace SuperMarioRecreation
             }
         }
 
-        private void drawBackground(SpriteBatch sb)
+        private void drawBackground()
         {
-            if (underGround)
-            {
-
-            }
-            spriteBatch.Draw(background, new Rectangle(backPos.X, backPos.Y, background.Width * 3, (background.Height * 2)), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
-            
+            //spriteBatch.Draw(background, new Rectangle(backPos.X, backPos.Y, background.Width * 3, (background.Height * 2)), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
+            spriteBatch.Draw(background, new Rectangle(backPos.X, backPos.Y, background.Width*3, background.Height*3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
         }
 
+        private void print()
+        {
+            spriteBatch.DrawString(myFont, "Width: " + background.Width + "  Height: " + background.Height, new Vector2(10, 10), Color.White);
+            spriteBatch.DrawString(myFont, "Width: " + background.Width*3 + "  Height: " + background.Height*3, new Vector2(10, 24), Color.White);
+        }
     }
 }
