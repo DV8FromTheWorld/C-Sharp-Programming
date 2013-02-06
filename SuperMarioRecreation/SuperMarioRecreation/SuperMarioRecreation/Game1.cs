@@ -20,9 +20,12 @@ namespace SuperMarioRecreation
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Matrix pos;
         BaseWorld currentWorld;
         BaseWorld[] worldList;
         Boolean firstTry = true;
+
+        Point backPos;
 
         SpriteFont myFont;
 
@@ -55,7 +58,7 @@ namespace SuperMarioRecreation
             graphics.PreferredBackBufferWidth = 765;        //Defines the size of the window (Width).
             graphics.ApplyChanges();                        //Actually sets the window to the size we defined.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            backPos = new Point(0, 0);
             myFont = Content.Load<SpriteFont>("myFont");
             worldList = new BaseWorld[] { new World1_1() };
         }
@@ -89,7 +92,7 @@ namespace SuperMarioRecreation
             }
             else
             {
-                Point backPos = currentWorld.getBackPos();
+                
                 if (keyDown(Keys.Escape))
                     this.Exit();
                 if (keyDown(Keys.Right))
@@ -100,7 +103,8 @@ namespace SuperMarioRecreation
                     backPos.Y -= 4;
                 if (keyDown(Keys.Down))
                     backPos.Y += 4;
-                currentWorld.setBackPos(backPos);
+                pos = Matrix.CreateTranslation(backPos.X, backPos.Y, 0);
+                //currentWorld.setBackPos(backPos);
             }
 
             base.Update(gameTime);
@@ -113,10 +117,14 @@ namespace SuperMarioRecreation
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, null, pos);
             currentWorld.draw(gameTime, spriteBatch);
+            spriteBatch.End();
+
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             print();
             spriteBatch.End();
+            
 
             base.Draw(gameTime);
         }

@@ -1,1 +1,2 @@
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreationContent\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreationContent\obj\x86\Debug\ResolveAssemblyReference.cache
