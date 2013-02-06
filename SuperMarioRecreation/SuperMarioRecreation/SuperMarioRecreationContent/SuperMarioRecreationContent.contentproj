@@ -49,22 +49,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Worlds\World1-1\world 1-1.png">
-      <Name>world 1-1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Worlds\World1-1\overworld.png">
-      <Name>overworld</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Worlds\World1-1\underground.png">
       <Name>underground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Worlds\World1-1\overworld_1.png">
+      <Name>overworld_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Worlds\World1-1\overworld_2.png">
+      <Name>overworld_2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

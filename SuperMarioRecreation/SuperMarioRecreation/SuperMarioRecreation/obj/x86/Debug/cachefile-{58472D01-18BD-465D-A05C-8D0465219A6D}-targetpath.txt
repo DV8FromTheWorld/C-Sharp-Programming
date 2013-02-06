@@ -1,4 +1,4 @@
 Content\myFont.xnb
-Content\Worlds\World1-1\world 1-1.xnb
-Content\Worlds\World1-1\overworld.xnb
 Content\Worlds\World1-1\underground.xnb
+Content\Worlds\World1-1\overworld_1.xnb
+Content\Worlds\World1-1\overworld_2.xnb

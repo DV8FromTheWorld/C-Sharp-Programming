@@ -25,9 +25,6 @@ namespace SuperMarioRecreation
         Boolean firstTry = true;
 
         SpriteFont myFont;
-        Point backPos;
-
-        Texture2D background;
 
         public Game1()
         {
@@ -44,8 +41,6 @@ namespace SuperMarioRecreation
         /// </summary>
         protected override void Initialize()
         {
-            backPos.X = 0;      //Changes as mario moves due to the background needing to move.
-            backPos.Y = 0;      //Should never change (otherwise it will render the image too far down the window.)
 
             base.Initialize();
         }
@@ -81,25 +76,31 @@ namespace SuperMarioRecreation
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            if (keyDown(Keys.Escape))
-                this.Exit();
-            if (keyDown(Keys.Right))
-                backPos.X -= 4;
-            if (keyDown(Keys.Left))
-                backPos.X += 4;
-            if (keyDown(Keys.Up))
-                backPos.Y -= 4;
-            if (keyDown(Keys.Down))
-                backPos.Y += 4;
+            
             if (firstTry)
             {
                 currentWorld = worldList[0];
                 currentWorld.initWorld();
-                background = currentWorld.getCurrentBackground();
                 firstTry = false;
+            }
+            else
+            {
+                Point backPos = currentWorld.getBackPos();
+                if (keyDown(Keys.Escape))
+                    this.Exit();
+                if (keyDown(Keys.Right))
+                    backPos.X -= 4;
+                if (keyDown(Keys.Left))
+                    backPos.X += 4;
+                if (keyDown(Keys.Up))
+                    backPos.Y -= 4;
+                if (keyDown(Keys.Down))
+                    backPos.Y += 4;
+                currentWorld.setBackPos(backPos);
             }
 
             base.Update(gameTime);
@@ -113,7 +114,7 @@ namespace SuperMarioRecreation
         {
             GraphicsDevice.Clear(Color.Black);
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
-            drawBackground();
+            currentWorld.draw(gameTime, spriteBatch);
             print();
             spriteBatch.End();
 
@@ -132,16 +133,10 @@ namespace SuperMarioRecreation
             }
         }
 
-        private void drawBackground()
-        {
-            //spriteBatch.Draw(background, new Rectangle(backPos.X, backPos.Y, background.Width * 3, (background.Height * 2)), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
-            spriteBatch.Draw(background, new Rectangle(backPos.X, backPos.Y, background.Width*3, background.Height*3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
-        }
-
         private void print()
         {
-            spriteBatch.DrawString(myFont, "Width: " + background.Width + "  Height: " + background.Height, new Vector2(10, 10), Color.White);
-            spriteBatch.DrawString(myFont, "Width: " + background.Width*3 + "  Height: " + background.Height*3, new Vector2(10, 24), Color.White);
+            spriteBatch.DrawString(myFont, "Width: " + currentWorld.getCurrentBackground().Width + "  Height: " + currentWorld.getCurrentBackground().Height, new Vector2(10, 10), Color.White);
+            spriteBatch.DrawString(myFont, "Width: " + currentWorld.getCurrentBackground().Width * 3 + "  Height: " + currentWorld.getCurrentBackground().Height * 3, new Vector2(10, 24), Color.White);
         }
     }
 }
