@@ -11,9 +11,11 @@ namespace SuperMarioRecreation.Util
     {
         Point cameraPos;
 
+        //Creates an instance of the camera at the default 0,0 position
         public Camera2D()
             : this(new Point(0, 0)){ }
 
+        //Creates an instance of the camera at the point specified.
         public Camera2D(Point position)
         {
             this.cameraPos = position;

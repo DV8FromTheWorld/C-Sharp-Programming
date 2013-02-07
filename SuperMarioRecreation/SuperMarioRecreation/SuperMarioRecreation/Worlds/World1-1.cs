@@ -10,12 +10,13 @@ namespace SuperMarioRecreation.Worlds
 {
     class World1_1 : BaseWorld
     {
+
         Rectangle[] tubeBBoxes;         //TODO:  Tube BBoxes (will be used for level and world changes)
         Rectangle[] floorBBoxes;        //TODO:  Floor BBoxes (needs to include tubeBBoxes)
 
         Texture2D[] backgrounds;        //Array of backgrounds for current world
         Texture2D aboveground1;
-        Texture2D aboveground2;  
+        Texture2D aboveground2;
         Texture2D underground;
         Texture2D currentBackground;
 
@@ -36,22 +37,18 @@ namespace SuperMarioRecreation.Worlds
 
         public void initBBoxes()
         {
-
+            throw new NotImplementedException();
         }
 
-        public Rectangle[] getTubeBBoxes()
-        {
-            return tubeBBoxes;
-        }
-
-        public Rectangle[] getFloorBBoxes()
+        public void update(GameTime gameTime)
         {
             throw new NotImplementedException();
         }
 
-        public Texture2D getCurrentBackground()
+        public void draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            return currentBackground;
+            spriteBatch.Draw(aboveground1, new Rectangle(backPos.X, backPos.Y, aboveground1.Width * 3, aboveground1.Height * 3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
+            spriteBatch.Draw(aboveground2, new Rectangle(backPos.X + aboveground1.Width * 3, backPos.Y, aboveground2.Width * 3, aboveground2.Height * 3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
         }
 
         public void tubeLevelChange(int tubeIndex)
@@ -71,7 +68,6 @@ namespace SuperMarioRecreation.Worlds
             }
         }
 
-
         public void worldChange(int worldIndex)
         {
             if (worldIndex == 0)
@@ -85,18 +81,15 @@ namespace SuperMarioRecreation.Worlds
             }
         }
 
-        public void update(GameTime gameTime)
+        public void setBackPos(Point point)
         {
-      
+            backPos = point;
         }
 
-        public void draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public Point getBackPos()
         {
-            spriteBatch.Draw(aboveground1, new Rectangle(backPos.X, backPos.Y, aboveground1.Width * 3, aboveground1.Height * 3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
-            spriteBatch.Draw(aboveground2, new Rectangle(backPos.X + aboveground1.Width*3, backPos.Y, aboveground2.Width * 3, aboveground2.Height * 3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
-           
+            return backPos;
         }
-
 
         public Rectangle[] getRoofBBoxes()
         {
@@ -108,15 +101,19 @@ namespace SuperMarioRecreation.Worlds
             throw new NotImplementedException();
         }
 
-
-        public void setBackPos(Point point)
+        public Rectangle[] getTubeBBoxes()
         {
-            backPos = point;
+            return tubeBBoxes;
         }
 
-        public Point getBackPos()
+        public Rectangle[] getFloorBBoxes()
         {
-            return backPos;
+            throw new NotImplementedException();
+        }
+
+        public Texture2D getCurrentBackground()
+        {
+            return currentBackground;
         }
     }
 }

@@ -9,16 +9,19 @@ namespace SuperMarioRecreation.Worlds
 {
     public interface BaseWorld
     {
-        void update(GameTime gameTime);
-        void draw(GameTime gameTime, SpriteBatch spriteBatch);
-        void setBackPos(Point point);
-        Point getBackPos();
+        
+        
 
         void initWorld();
         void initBBoxes();
+        void update(GameTime gameTime);
+        void draw(GameTime gameTime, SpriteBatch spriteBatch);
+
         void tubeLevelChange(int tubeIndex);
         void worldChange(int worldIndex);
 
+        void setBackPos(Point point);
+        Point getBackPos();
         Rectangle[] getRoofBBoxes();
         Rectangle[] getWallBBoxes();
         Rectangle[] getTubeBBoxes();

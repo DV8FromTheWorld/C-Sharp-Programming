@@ -117,14 +117,16 @@ namespace SuperMarioRecreation
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
+
+            //Main draw method.  All drawing that is not part of the scoreboard goes here
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, null, pos);
             currentWorld.draw(gameTime, spriteBatch);
             spriteBatch.End();
 
+            //Will be used for scoreboard area.
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             print();
             spriteBatch.End();
-            
 
             base.Draw(gameTime);
         }
