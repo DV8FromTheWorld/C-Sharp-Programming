@@ -25,6 +25,8 @@ namespace SuperMarioRecreation
         BaseWorld[] worldList;
         Boolean firstTry = true;
 
+        Texture2D mario;
+
         Point backPos;
 
         SpriteFont myFont;
@@ -59,6 +61,7 @@ namespace SuperMarioRecreation
             graphics.ApplyChanges();                        //Actually sets the window to the size we defined.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             backPos = new Point(0, 0);
+            mario = Content.Load<Texture2D>("mario");
             myFont = Content.Load<SpriteFont>("myFont");
             worldList = new BaseWorld[] { new World1_1() };
         }
@@ -126,6 +129,7 @@ namespace SuperMarioRecreation
             //Will be used for scoreboard area.
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             print();
+            spriteBatch.Draw(mario, new Vector2(30, 400), Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -147,6 +151,7 @@ namespace SuperMarioRecreation
         {
             spriteBatch.DrawString(myFont, "Width: " + currentWorld.getCurrentBackground().Width + "  Height: " + currentWorld.getCurrentBackground().Height, new Vector2(10, 10), Color.White);
             spriteBatch.DrawString(myFont, "Width: " + currentWorld.getCurrentBackground().Width * 3 + "  Height: " + currentWorld.getCurrentBackground().Height * 3, new Vector2(10, 24), Color.White);
+            
         }
     }
 }

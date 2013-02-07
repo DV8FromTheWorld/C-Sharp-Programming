@@ -2,3 +2,4 @@ Content\myFont.xnb
 Content\Worlds\World1-1\underground.xnb
 Content\Worlds\World1-1\overworld_1.xnb
 Content\Worlds\World1-1\overworld_2.xnb
+Content\mario.xnb

@@ -11,14 +11,21 @@ namespace SuperMarioRecreation.Worlds
     class World1_1 : BaseWorld
     {
 
+
+        Rectangle[] roofBBoxes;
+        Rectangle[] wallBBoxes;
         Rectangle[] tubeBBoxes;         //TODO:  Tube BBoxes (will be used for level and world changes)
         Rectangle[] floorBBoxes;        //TODO:  Floor BBoxes (needs to include tubeBBoxes)
 
         Texture2D[] backgrounds;        //Array of backgrounds for current world
-        Texture2D aboveground1;
-        Texture2D aboveground2;
+        Texture2D abovePart1;
+        Texture2D abovePart2;
         Texture2D underground;
         Texture2D currentBackground;
+
+        //Magic Numbers
+        Rectangle abovePos1;
+        Rectangle abovePos2;
 
         Point backPos;
         ContentManager content;
@@ -26,18 +33,21 @@ namespace SuperMarioRecreation.Worlds
         public void initWorld()
         {
             content = Program.baseGame.Content;
-            aboveground1 = content.Load<Texture2D>("Worlds/World1-1/overworld_1");
-            aboveground2 = content.Load<Texture2D>("Worlds/World1-1/overworld_2");
+            abovePart1 = content.Load<Texture2D>("Worlds/World1-1/overworld_1");
+            abovePart2 = content.Load<Texture2D>("Worlds/World1-1/overworld_2");
             underground = content.Load<Texture2D>("Worlds/World1-1/underground");
-            //backgroundPosition = new Point(0, 0);
 
-            backgrounds = new Texture2D[] { aboveground1, aboveground2, underground };
+            //Magic Numbers
+            abovePos1 = new Rectangle(0, 0, abovePart1.Width*3, abovePart2.Height*3);
+            abovePos2 = new Rectangle(abovePart1.Width * 3, 0, abovePart2.Width * 3, abovePart2.Height * 3);
+
+            backgrounds = new Texture2D[] { abovePart1, abovePart2, underground };
             currentBackground = backgrounds[0];
         }
 
         public void initBBoxes()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void update(GameTime gameTime)
@@ -47,8 +57,8 @@ namespace SuperMarioRecreation.Worlds
 
         public void draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(aboveground1, new Rectangle(backPos.X, backPos.Y, aboveground1.Width * 3, aboveground1.Height * 3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
-            spriteBatch.Draw(aboveground2, new Rectangle(backPos.X + aboveground1.Width * 3, backPos.Y, aboveground2.Width * 3, aboveground2.Height * 3), null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
+            spriteBatch.Draw(abovePart1, abovePos1, null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
+            spriteBatch.Draw(abovePart2, abovePos2, null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 0f);
         }
 
         public void tubeLevelChange(int tubeIndex)
@@ -60,7 +70,7 @@ namespace SuperMarioRecreation.Worlds
                     //backgroundPosition = new Point(0, 0);
                     break;
                 case 1:
-                    currentBackground = aboveground1;
+                    currentBackground = abovePart1;
                     //backgroundPosition = new Point(0, 0);
                     break;
                 default:

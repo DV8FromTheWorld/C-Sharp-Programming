@@ -18,3 +18,4 @@ C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\Su
 \\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 \\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\SuperMarioRecreation.exe
 \\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\obj\x86\Debug\SuperMarioRecreation.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SuperMarioRecreation\SuperMarioRecreation\SuperMarioRecreation\bin\x86\Debug\Content\mario.xnb
