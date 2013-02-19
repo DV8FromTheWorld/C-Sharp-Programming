@@ -24,10 +24,11 @@ namespace SuperMarioRecreation
         BaseWorld currentWorld;
         BaseWorld[] worldList;
         Boolean firstTry = true;
-
         Texture2D mario;
 
+        Viewport v;
         Point backPos;
+        Vector2 marioPos;
 
         SpriteFont myFont;
 
@@ -61,6 +62,7 @@ namespace SuperMarioRecreation
             graphics.ApplyChanges();                        //Actually sets the window to the size we defined.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             backPos = new Point(0, 0);
+            marioPos = new Vector2(120, 552);
             mario = Content.Load<Texture2D>("mario");
             myFont = Content.Load<SpriteFont>("myFont");
             worldList = new BaseWorld[] { new World1_1() };
@@ -82,7 +84,7 @@ namespace SuperMarioRecreation
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            
+            v = graphics.GraphicsDevice.Viewport;
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
@@ -95,19 +97,7 @@ namespace SuperMarioRecreation
             }
             else
             {
-                
-                if (keyDown(Keys.Escape))
-                    this.Exit();
-                if (keyDown(Keys.Right))
-                    backPos.X -= 4;
-                if (keyDown(Keys.Left))
-                    backPos.X += 4;
-                if (keyDown(Keys.Up))
-                    backPos.Y -= 4;
-                if (keyDown(Keys.Down))
-                    backPos.Y += 4;
-                pos = Matrix.CreateTranslation(backPos.X, backPos.Y, 0);
-                //currentWorld.setBackPos(backPos);
+                checkMovement();
             }
 
             base.Update(gameTime);
@@ -124,12 +114,13 @@ namespace SuperMarioRecreation
             //Main draw method.  All drawing that is not part of the scoreboard goes here
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, null, pos);
             currentWorld.draw(gameTime, spriteBatch);
+            spriteBatch.Draw(mario, marioPos, Color.White);
             spriteBatch.End();
 
             //Will be used for scoreboard area.
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             print();
-            spriteBatch.Draw(mario, new Vector2(30, 400), Color.White);
+            
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -149,9 +140,32 @@ namespace SuperMarioRecreation
 
         private void print()
         {
-            spriteBatch.DrawString(myFont, "Width: " + currentWorld.getCurrentBackground().Width + "  Height: " + currentWorld.getCurrentBackground().Height, new Vector2(10, 10), Color.White);
-            spriteBatch.DrawString(myFont, "Width: " + currentWorld.getCurrentBackground().Width * 3 + "  Height: " + currentWorld.getCurrentBackground().Height * 3, new Vector2(10, 24), Color.White);
-            
+            spriteBatch.DrawString(myFont, "View Port  X: " + v.X + "  Y: " + v.Y, new Vector2(10, 24), Color.White);
+            spriteBatch.DrawString(myFont, "Camera Pos  X: " + backPos.X + "  Y: " + backPos.Y, new Vector2(10, 10), Color.White);
+        }
+
+        private void checkMovement()
+        {
+            if (keyDown(Keys.Escape))
+                this.Exit();
+            if (keyDown(Keys.Right))
+            {
+                marioPos.X += 4;
+                if (marioPos.X >= backPos.X + v.Width / 2)
+                    backPos.X += 4;
+            }
+            if (keyDown(Keys.Left))
+            {
+                if (!(marioPos.X <= backPos.X))
+                {
+                    marioPos.X -= 4;
+                }
+            }
+            if (keyDown(Keys.Up))
+                marioPos.Y -= 4;
+            if (keyDown(Keys.Down))
+                marioPos.Y += 4;
+            pos = Matrix.CreateTranslation(-backPos.X, backPos.Y, 0); 
         }
     }
 }
