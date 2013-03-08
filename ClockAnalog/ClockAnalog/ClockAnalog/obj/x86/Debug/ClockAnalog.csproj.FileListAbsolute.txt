@@ -1,0 +1,11 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\Content\clock.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\ClockAnalog.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\ClockAnalog.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Debug\ClockAnalog.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Debug\ClockAnalog.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\Content\myFont.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\Content\hourHand.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\Content\SecondHand.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Debug\Content\minuteHand.xnb

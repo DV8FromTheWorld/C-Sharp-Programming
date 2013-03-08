@@ -1,0 +1,12 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\Content\AmbulanceBackward.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\Content\AmbulanceForward.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\Content\AmbulanceLeft.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\Content\AmbulanceRight.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\Content\Hospital Parking Lot.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\MovingWithSpeed.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\MovingWithSpeed.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\obj\x86\Debug\MovingWithSpeed.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\obj\x86\Debug\MovingWithSpeed.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MovingWithSpeed\MovingWithSpeed\MovingWithSpeed\bin\x86\Debug\Content\myFont.xnb

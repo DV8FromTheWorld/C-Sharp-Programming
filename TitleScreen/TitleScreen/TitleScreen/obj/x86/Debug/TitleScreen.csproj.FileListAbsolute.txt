@@ -1,0 +1,10 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\bin\x86\Debug\Content\titleScreen.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\bin\x86\Debug\TitleScreen.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\bin\x86\Debug\TitleScreen.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\obj\x86\Debug\TitleScreen.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\obj\x86\Debug\TitleScreen.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\bin\x86\Debug\Content\selected.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\bin\x86\Debug\Content\unselected.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\TitleScreen\TitleScreen\TitleScreen\bin\x86\Debug\Content\myFont.xnb

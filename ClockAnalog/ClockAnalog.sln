@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockAnalog", "ClockAnalog\ClockAnalog\ClockAnalog.csproj", "{7AD0A8E4-2D85-46B1-9B77-A09D827D700B}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ClockAnalogContent", "ClockAnalog\ClockAnalogContent\ClockAnalogContent.contentproj", "{D959C444-88AB-408A-9C72-D34A0884B4B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD0A8E4-2D85-46B1-9B77-A09D827D700B}.Debug|x86.ActiveCfg = Debug|x86
+		{7AD0A8E4-2D85-46B1-9B77-A09D827D700B}.Debug|x86.Build.0 = Debug|x86
+		{7AD0A8E4-2D85-46B1-9B77-A09D827D700B}.Release|x86.ActiveCfg = Release|x86
+		{7AD0A8E4-2D85-46B1-9B77-A09D827D700B}.Release|x86.Build.0 = Release|x86
+		{D959C444-88AB-408A-9C72-D34A0884B4B0}.Debug|x86.ActiveCfg = Debug|x86
+		{D959C444-88AB-408A-9C72-D34A0884B4B0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
