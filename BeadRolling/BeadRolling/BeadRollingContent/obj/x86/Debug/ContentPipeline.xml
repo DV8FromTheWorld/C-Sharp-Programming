@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>background.png</Source>
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2013-03-11T10:23:16.9844509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll1.png</Source>
+      <Name>roll1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll1.xnb</Output>
+      <Time>2013-03-11T10:23:17.6934509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll10.png</Source>
+      <Name>roll10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll10.xnb</Output>
+      <Time>2013-03-11T10:23:23.5214509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll2.png</Source>
+      <Name>roll2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll2.xnb</Output>
+      <Time>2013-03-11T10:23:18.2904509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll3.png</Source>
+      <Name>roll3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll3.xnb</Output>
+      <Time>2013-03-11T10:23:19.0954509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll4.png</Source>
+      <Name>roll4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll4.xnb</Output>
+      <Time>2013-03-11T10:23:19.8014509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll5.png</Source>
+      <Name>roll5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll5.xnb</Output>
+      <Time>2013-03-11T10:23:20.3154509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll6.png</Source>
+      <Name>roll6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll6.xnb</Output>
+      <Time>2013-03-11T10:23:21.0084509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll7.png</Source>
+      <Name>roll7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll7.xnb</Output>
+      <Time>2013-03-11T10:23:21.6124509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll8.png</Source>
+      <Name>roll8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll8.xnb</Output>
+      <Time>2013-03-11T10:23:22.4154509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>roll9.png</Source>
+      <Name>roll9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\roll9.xnb</Output>
+      <Time>2013-03-11T10:23:22.8264509-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>myFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2013-03-11T10:37:36.9427231-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRollingContent\</RootDirectory>
+      <LoggerRootDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\</LoggerRootDirectory>
+      <IntermediateDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRollingContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\BeadRolling\BeadRolling\BeadRolling\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-01-22T08:21:35.9539767-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,11 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\Content\clock.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\Content\hourHand.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\Content\minuteHand.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\Content\secondHand.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\Content\myFont.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\ClockAnalog.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\bin\x86\Release\ClockAnalog.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Release\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Release\ClockAnalog.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\ClockAnalog\ClockAnalog\ClockAnalog\obj\x86\Release\ClockAnalog.pdb
