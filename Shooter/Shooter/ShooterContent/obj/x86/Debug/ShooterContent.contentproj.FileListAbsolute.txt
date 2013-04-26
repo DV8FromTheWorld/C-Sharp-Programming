@@ -1,0 +1,2 @@
+C:\Users\GAKeener\Desktop\Shooter\Shooter\ShooterContent\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\ShooterContent\obj\x86\Debug\ResolveAssemblyReference.cache

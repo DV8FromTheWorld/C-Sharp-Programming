@@ -1,0 +1,14 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Bearded Robot.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Bearded Robot.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\obj\x86\Debug\Bearded Robot.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\obj\x86\Debug\Bearded Robot.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\reactionFont.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\ding.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\B_Button.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\X_Button.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\Y_Button.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\A_Button.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\note.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Bearded Robot\Bearded Robot\Bearded Robot\bin\x86\Debug\Content\rumble.xnb

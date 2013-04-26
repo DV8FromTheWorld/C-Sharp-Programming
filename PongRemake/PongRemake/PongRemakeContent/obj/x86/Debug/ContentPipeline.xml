@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>myFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2013-03-21T10:40:16.1346796-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Ball.bmp</Source>
+      <Name>Ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\Ball.xnb</Output>
+      <Time>2013-03-15T10:59:14.7051752-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Paddle.bmp</Source>
+      <Name>Paddle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\Paddle.xnb</Output>
+      <Time>2013-03-15T10:22:36.5204969-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemakeContent\</RootDirectory>
+      <LoggerRootDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\</LoggerRootDirectory>
+      <IntermediateDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemakeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-01-22T08:21:35.9539767-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

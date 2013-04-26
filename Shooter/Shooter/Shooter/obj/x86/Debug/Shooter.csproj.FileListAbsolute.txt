@@ -1,0 +1,48 @@
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bgLayer1.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bgLayer2.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\endMenu.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\explosion.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\laser.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mainbackground.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mainMenu.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mine.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mineAnimation.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\player.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\shipAnimation.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\explosion.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\laserFire.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\gameMusic.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\menuMusic.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\gameFont.xnb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\gameMusic.wma
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\menuMusic.wma
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.exe
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.pdb
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
+C:\Users\GAKeener\Desktop\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bgLayer1.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bgLayer2.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\endMenu.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\explosion.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\laser.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mainbackground.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mainMenu.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mine.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mineAnimation.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\player.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\shipAnimation.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\explosion.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\laserFire.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\gameMusic.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\menuMusic.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\gameFont.xnb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\gameMusic.wma
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sound\menuMusic.wma
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.exe
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb

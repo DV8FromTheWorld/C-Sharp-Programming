@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bearded Robot", "Bearded Robot\Bearded Robot\Bearded Robot.csproj", "{25A615F0-2274-4654-BD6F-402ACF31F314}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Bearded RobotContent", "Bearded Robot\Bearded RobotContent\Bearded RobotContent.contentproj", "{50604844-89DB-412B-A9DB-50330513A58F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25A615F0-2274-4654-BD6F-402ACF31F314}.Debug|x86.ActiveCfg = Debug|x86
+		{25A615F0-2274-4654-BD6F-402ACF31F314}.Debug|x86.Build.0 = Debug|x86
+		{25A615F0-2274-4654-BD6F-402ACF31F314}.Release|x86.ActiveCfg = Release|x86
+		{25A615F0-2274-4654-BD6F-402ACF31F314}.Release|x86.Build.0 = Release|x86
+		{50604844-89DB-412B-A9DB-50330513A58F}.Debug|x86.ActiveCfg = Debug|x86
+		{50604844-89DB-412B-A9DB-50330513A58F}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
