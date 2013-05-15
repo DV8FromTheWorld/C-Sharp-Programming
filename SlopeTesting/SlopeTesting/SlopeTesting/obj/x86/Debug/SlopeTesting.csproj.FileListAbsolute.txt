@@ -1,0 +1,9 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\bin\x86\Debug\SlopeTesting.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\bin\x86\Debug\SlopeTesting.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\obj\x86\Debug\SlopeTesting.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\obj\x86\Debug\SlopeTesting.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\bin\x86\Debug\Content\ball.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\bin\x86\Debug\Content\font.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTesting\bin\x86\Debug\Content\player_bar.xnb

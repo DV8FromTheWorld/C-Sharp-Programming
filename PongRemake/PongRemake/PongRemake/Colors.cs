@@ -32,6 +32,10 @@ namespace PongRemake
                 case GameScreen.PAUSED:
                     pauseScreenColors = new Color[] { Color.White, Color.White, Color.White, Color.White };
                     break;
+                case GameScreen.PLAYING:
+                    break;
+                case GameScreen.OPTIONS:
+                    break;
                 default:
                     throw new Exception("Error in switch statement in the ResetScreenColors method.  Did not suit any of the screen types");
 

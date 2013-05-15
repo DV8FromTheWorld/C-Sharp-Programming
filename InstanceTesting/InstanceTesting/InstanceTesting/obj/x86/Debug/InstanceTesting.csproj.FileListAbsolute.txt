@@ -1,0 +1,7 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\bin\x86\Debug\Content\myFont.xnb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\bin\x86\Debug\InstanceTesting.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\bin\x86\Debug\InstanceTesting.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\obj\x86\Debug\InstanceTesting.exe
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\InstanceTesting\InstanceTesting\InstanceTesting\obj\x86\Debug\InstanceTesting.pdb

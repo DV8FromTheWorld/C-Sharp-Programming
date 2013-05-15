@@ -1,0 +1,1 @@
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\SlopeTesting\SlopeTesting\SlopeTestingContent\obj\x86\Debug\ResolveAssemblyReference.cache

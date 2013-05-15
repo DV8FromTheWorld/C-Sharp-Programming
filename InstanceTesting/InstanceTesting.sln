@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceTesting", "InstanceTesting\InstanceTesting\InstanceTesting.csproj", "{4D4C8BF2-6F36-4908-98D0-65B7AA011A84}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "InstanceTestingContent", "InstanceTesting\InstanceTestingContent\InstanceTestingContent.contentproj", "{EB8DC190-5F98-470C-81A8-722D4B1B8A1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D4C8BF2-6F36-4908-98D0-65B7AA011A84}.Debug|x86.ActiveCfg = Debug|x86
+		{4D4C8BF2-6F36-4908-98D0-65B7AA011A84}.Debug|x86.Build.0 = Debug|x86
+		{4D4C8BF2-6F36-4908-98D0-65B7AA011A84}.Release|x86.ActiveCfg = Release|x86
+		{4D4C8BF2-6F36-4908-98D0-65B7AA011A84}.Release|x86.Build.0 = Release|x86
+		{EB8DC190-5F98-470C-81A8-722D4B1B8A1F}.Debug|x86.ActiveCfg = Debug|x86
+		{EB8DC190-5F98-470C-81A8-722D4B1B8A1F}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

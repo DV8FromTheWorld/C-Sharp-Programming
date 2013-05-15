@@ -19,7 +19,16 @@ namespace Shooter
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        KeyboardState key;
+        KeyboardState keyOld;
+
+        GamePadState pad;
+        GamePadState padOld;
+
+        float playerMoveSpeed;
+
         Player player;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -36,6 +45,7 @@ namespace Shooter
         {
             // TODO: Add your initialization logic here
             player = new Player();
+            playerMoveSpeed = 8.0f;
             base.Initialize();
         }
 
@@ -47,9 +57,13 @@ namespace Shooter
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Vector2 InitialPlayerPos = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
-            player.Initialize(Content.Load<Texture2D>("player"), InitialPlayerPos);
-
+           
+            // Load the player resources
+            Animation playerAnimation = new Animation();
+            Texture2D playerTexture = Content.Load<Texture2D>("shipAnimation");
+            playerAnimation.Initialize(playerTexture, Vector2.Zero, 115, 69, 8, 30, Color.White, 1f, true);
+            Vector2 playerPosition = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
+            player.Initialize(playerAnimation, playerPosition);
             // TODO: use this.Content to load your game content here
         }
 
@@ -69,11 +83,14 @@ namespace Shooter
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            pad = GamePad.GetState(PlayerIndex.One);
+            key = Keyboard.GetState();
+            UpdatePlayer(gameTime, player, pad);
 
 
+
+            padOld = pad;
+            keyOld = key;
             base.Update(gameTime);
         }
 
@@ -89,6 +106,40 @@ namespace Shooter
             spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        private void UpdatePlayer(GameTime gameTime, Player tempPlayer, GamePadState tempPad)
+        {
+            player.Update(gameTime);
+            // Get Thumbstick Controls
+            tempPlayer.Position.X += tempPad.ThumbSticks.Left.X * playerMoveSpeed;
+            tempPlayer.Position.Y -= tempPad.ThumbSticks.Left.Y * playerMoveSpeed;
+
+            // Use the Keyboard / Dpad
+            if (key.IsKeyDown(Keys.Left) ||
+            tempPad.DPad.Left == ButtonState.Pressed)
+            {
+                tempPlayer.Position.X -= playerMoveSpeed;
+            }
+            if (key.IsKeyDown(Keys.Right) ||
+            tempPad.DPad.Right == ButtonState.Pressed)
+            {
+                tempPlayer.Position.X += playerMoveSpeed;
+            }
+            if (key.IsKeyDown(Keys.Up) ||
+            tempPad.DPad.Up == ButtonState.Pressed)
+            {
+                tempPlayer.Position.Y -= playerMoveSpeed;
+            }
+            if (key.IsKeyDown(Keys.Down) ||
+            tempPad.DPad.Down == ButtonState.Pressed)
+            {
+                tempPlayer.Position.Y += playerMoveSpeed;
+            }
+
+            // Make sure that the player does not go out of bounds
+            tempPlayer.Position.X = MathHelper.Clamp(tempPlayer.Position.X, 0, GraphicsDevice.Viewport.Width - tempPlayer.Width);
+            tempPlayer.Position.Y = MathHelper.Clamp(tempPlayer.Position.Y, 0, GraphicsDevice.Viewport.Height - tempPlayer.Height);
         }
     }
 }

@@ -19,8 +19,8 @@ namespace PongRemake
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Texture2D ball;
-        Texture2D paddle;
+        public static Texture2D ball;
+        public static Texture2D playerBar;
 
         public static int monitorWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
         public static int monitorHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
@@ -32,7 +32,7 @@ namespace PongRemake
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = monitorWidth;
             graphics.PreferredBackBufferHeight = monitorHeight;
-            //graphics.IsFullScreen = true;
+            graphics.IsFullScreen = true;
             graphics.ApplyChanges();
             IsMouseVisible = true;
             Content.RootDirectory = "Content";
@@ -47,6 +47,7 @@ namespace PongRemake
         protected override void Initialize()
         {
             Drawing.myFont = Content.Load<SpriteFont>("myFont");
+            Updater.viewport = graphics.GraphicsDevice.Viewport;
             Updater.InitializeVariables();
             Updater.currentRendering = GameScreen.TITLE;
             Colors.PopulateColors();
@@ -63,7 +64,7 @@ namespace PongRemake
             spriteBatch = new SpriteBatch(GraphicsDevice);
             
             ball = Content.Load<Texture2D>("ball");
-            paddle = Content.Load<Texture2D>("paddle");
+            playerBar = Content.Load<Texture2D>("paddle");
             Drawing.spriteBatch = spriteBatch;
         }
 
@@ -85,6 +86,8 @@ namespace PongRemake
         {
             Updater.kbCurrent = Keyboard.GetState();
             Updater.mouse = Mouse.GetState();
+            Updater.pad1 = GamePad.GetState(PlayerIndex.One);
+            Updater.pad2 = GamePad.GetState(PlayerIndex.Two);
             if (Updater.kbCurrent.IsKeyDown(Keys.Escape))
                 this.Exit();
             if (Updater.fadeChange)
@@ -97,24 +100,31 @@ namespace PongRemake
                 {
                     case GameScreen.TITLE:
                         Updater.TitleScreen();
+                        IsMouseVisible = true;
                         break;
                     case GameScreen.OPTIONS:
                         Updater.OptionsScreen();
+                        IsMouseVisible = true;
                         break;
                     case GameScreen.PAUSED:
                         Updater.PauseScreen();
+                        IsMouseVisible = true;
                         break;
                     case GameScreen.QUIT:
                         Updater.QuitScreen();
+                        IsMouseVisible = true;
                         break;
                     case GameScreen.PLAYING:
-                        Updater.GamePlayingScreen();
+                        Updater.gameEngine.Update();
+                        IsMouseVisible = false;
                         break;
                     default:
                         throw new Exception("Error in switch statment in UPDATE method.  Did not satisfy any of the cases (currentRendering).");
                 }
             }
             Updater.kbOld = Updater.kbCurrent;
+            Updater.padOld1 = Updater.pad1;
+            Updater.padOld2 = Updater.pad2;
             base.Update(gameTime);
         }
 

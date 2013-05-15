@@ -2,10 +2,10 @@ using System;
 
 namespace PongRemake
 {
-#if WINDOWS || XBOX
+#if WINDOWS
     static class Program
     {
-        public static GameBase instance;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -13,7 +13,7 @@ namespace PongRemake
         {
             using (GameBase game = new GameBase())
             {
-                instance = game;
+                Updater.gameInstance = game;
                 game.Run();
             }
         }

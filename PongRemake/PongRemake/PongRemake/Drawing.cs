@@ -51,9 +51,15 @@ namespace PongRemake
             }
         }
 
-        public static void GamePlayingScreen()
+        public static void GamePlayingScreen() { GamePlayingScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
+        public static void GamePlayingScreen(float transparency) { GamePlayingScreen(transparency, true); }
+        public static void GamePlayingScreen(float transparency, bool applyTransparency)
         {
-
+            spriteBatch.Draw(Updater.gameEngine.ball.texture, Updater.gameEngine.ball.position, Color.White);
+            spriteBatch.Draw(Updater.gameEngine.playerOne.texture, Updater.gameEngine.playerOne.position, Updater.gameEngine.playerOne.color);
+            Color[] color = new Color[] { Color.Red, Color.Blue, Color.Green, Color.Orange, Color.Yellow, Color.Purple };
+            for (int i = 0; i < 6; i++)
+                spriteBatch.Draw(Updater.gameEngine.playerOne.texture, Updater.gameEngine.playerOne.collisionBoxes[i], color[i]);
         }
 
         public static void OptionsScreen() { OptionsScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
@@ -108,6 +114,9 @@ namespace PongRemake
                 case GameScreen.QUIT:
                     QuitScreen(Updater.currentTransparency);
                     break;
+                case GameScreen.PLAYING:
+                    GamePlayingScreen(Updater.currentTransparency);
+                    break;
                 default:
                     throw new Exception("fadeChange's Switch statement could understand which screen to draw as currentRendering.");
             }
@@ -124,6 +133,9 @@ namespace PongRemake
                     break;
                 case GameScreen.QUIT:
                     QuitScreen(Updater.nextTransparency);
+                    break;
+                case GameScreen.PLAYING:
+                    GamePlayingScreen(Updater.nextTransparency);
                     break;
                 default:
                     throw new Exception("fadeChange's Switch statement could understand which screen to draw as nextRendering.");

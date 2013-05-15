@@ -9,37 +9,50 @@ namespace Shooter
 {
     class Player
     {
-        Texture2D PlayerTexture;
-        Vector2 Position;
+        // Animation representing the player
+        public Animation PlayerAnimation;
 
-        bool Active;
+        public Texture2D PlayerTexture;
+        public Vector2 Position;
 
-        int Health;
+        public bool Active;
+
+        public int Health;
+        // Get the width of the player ship
         public int Width
         {
-            get { return PlayerTexture.Width; }
-        }
-        public int Height
-        {
-            get { return PlayerTexture.Height; }
+            get { return PlayerAnimation.FrameWidth; }
         }
 
-        public void Initialize(Texture2D texture, Vector2 position)
+        // Get the height of the player ship
+        public int Height
         {
-            PlayerTexture = texture;
+            get { return PlayerAnimation.FrameHeight; }
+        }
+
+        public void Initialize(Animation animation, Vector2 position)
+        {
+            PlayerAnimation = animation;
+
+            // Set the starting position of the player around the middle of the screen and to the back
             Position = position;
+
+            // Set the player to be active
             Active = true;
+
+            // Set the player health
             Health = 100;
         }
 
-        public void Update()
-        { 
-        
+        public void Update(GameTime gameTime)
+        {
+            PlayerAnimation.Position = Position;
+            PlayerAnimation.Update(gameTime);
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(PlayerTexture, Position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+            PlayerAnimation.Draw(spriteBatch);
         }
 
     }

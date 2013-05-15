@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace PongRemake
 {
@@ -13,9 +14,20 @@ namespace PongRemake
         public static KeyboardState kbCurrent;
         public static KeyboardState kbOld;
 
+        public static GamePadState pad1;
+        public static GamePadState pad2;
+        public static GamePadState padOld1;
+        public static GamePadState padOld2;
+
         public static MouseState mouse;
 
         public static bool fadeChange;
+
+        public static Game gameInstance;
+
+        public static GameEngine gameEngine;
+
+        public static Viewport viewport;
 
         //Start screen positions for text drawing
         public static Vector2[] titleScreenTextPos = new Vector2[3]; // 0: Text.TITLE.Start   1: Text.TITLE.Options  2: Text.TITLE.Quit
@@ -127,19 +139,6 @@ namespace PongRemake
             }
 
         }
-            
-        public static void GamePlayingScreen()
-        {
-            if ((kbCurrent.IsKeyDown(Keys.P) && kbOld.IsKeyUp(Keys.P)))
-            {
-                SwitchScreen(GameScreen.PAUSED);
-            }
-            else
-            {
-                //TODO STUFF
-            }
-
-        }
 
         public static void OptionsScreen()
         {
@@ -154,7 +153,7 @@ namespace PongRemake
             {
                 Colors.quitScreenColors[0] = Color.Red;
                 if (mouse.LeftButton == ButtonState.Pressed)
-                    Program.instance.Exit();
+                    Updater.gameInstance.Exit();
             }
             else if (quitScreenTextRec[1].Contains(mouse.X, mouse.Y))  //Text.QUIT.No
             {
@@ -177,6 +176,7 @@ namespace PongRemake
                 fadeChange = false;
             }
         }
+
         public static void SwitchScreenNoFade(string nextScreen)
         {
             oldRendering = currentRendering;
@@ -185,14 +185,16 @@ namespace PongRemake
 
         public static void SwitchScreen(string nextScreen)
         {
-            Colors.ResetScreenColors(currentRendering);
+            if (currentRendering != GameScreen.PLAYING) 
+                Colors.ResetScreenColors(currentRendering);             
             nextRendering = nextScreen;
             fadeChange = true;
         }
 
         public static void StartNewGame()
-        { 
-            
+        {
+            SwitchScreenNoFade(GameScreen.PLAYING);
+            gameEngine = new GameEngine();            
         }
     }
 }
