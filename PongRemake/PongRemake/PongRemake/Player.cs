@@ -21,6 +21,7 @@ namespace PongRemake
         {
             get { return GameBase.playerBar; }
         }
+        
         public Rectangle[] collisionBoxes;
 
         public Player(String name, PlayerIndex playerIndex, bool isAI, Color color)
@@ -45,6 +46,14 @@ namespace PongRemake
                 position.Y = Updater.mouse.Y - (position.Height / 2);   //Currently will be used for player 1
                 //MULTPLAYER TODO: Send packet to other player(s) / Server
                 UpdateCollisionBoxes();
+                if (!Updater.gameEngine.multiplayer)
+                {
+                    if (Updater.kbCurrent.IsKeyDown(Keys.Escape) && Updater.kbOld.IsKeyUp(Keys.Escape))
+                    {
+                        //TODO: Pause screen
+                    }
+                }
+                
                 
             }
             else
@@ -59,6 +68,11 @@ namespace PongRemake
             {
                 this.collisionBoxes[i] = new Rectangle(position.X + ((position.Width / 4) * 3), position.Y + ((position.Height / 6) * i), position.Width / 4, position.Height / 6);
             }
+        }
+
+        public void PlayCollisionSound()
+        { 
+            //TODO: Play sound
         }
     }
 }

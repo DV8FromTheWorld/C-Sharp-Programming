@@ -55,11 +55,8 @@ namespace PongRemake
         public static void GamePlayingScreen(float transparency) { GamePlayingScreen(transparency, true); }
         public static void GamePlayingScreen(float transparency, bool applyTransparency)
         {
-            spriteBatch.Draw(Updater.gameEngine.ball.texture, Updater.gameEngine.ball.position, Color.White);
-            spriteBatch.Draw(Updater.gameEngine.playerOne.texture, Updater.gameEngine.playerOne.position, Updater.gameEngine.playerOne.color);
-            Color[] color = new Color[] { Color.Red, Color.Blue, Color.Green, Color.Orange, Color.Yellow, Color.Purple };
-            for (int i = 0; i < 6; i++)
-                spriteBatch.Draw(Updater.gameEngine.playerOne.texture, Updater.gameEngine.playerOne.collisionBoxes[i], color[i]);
+            Updater.gameEngine.Draw(spriteBatch);
+            
         }
 
         public static void OptionsScreen() { OptionsScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false

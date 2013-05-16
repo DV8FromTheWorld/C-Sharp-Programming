@@ -25,21 +25,22 @@ namespace PongRemake
         public PongBall()
         {
             position = new Rectangle(30, GameBase.monitorHeight, ((GameBase.monitorHeight / 5) / 6) - 12, ((GameBase.monitorHeight / 5) / 6) - 12);
-            slope = 0.5f;
+            Reset();
             speed = 12;
-            movingRight = true;
             isAlive = true;
         }
 
         public void Update()
         {
-            if (movingRight)
-                position.X += speed;
-            else
-                position.X -= speed;
-            position.Y = (int)(position.X * slope) + yIntercept;
-            CheckWallCollision();
-            //CheckPastPlayer();
+            if (isAlive)
+            {
+                if (movingRight)
+                    position.X += speed;
+                else
+                    position.X -= speed;
+                position.Y = (int)(position.X * slope) + yIntercept;
+                CheckWallCollision();
+            }
         }
 
         private void CheckWallCollision()
@@ -57,12 +58,12 @@ namespace PongRemake
                 slope *= -1;
             }
 
-            if (position.X < 0)                                  //Hits the left wall
-            {
-                SwitchDirection();
-                yIntercept = (int)(position.Y + (position.X * slope));
-                slope *= -1;
-            }
+            //if (position.X < 0)                                  //Hits the left wall
+            //{
+            //    SwitchDirection();
+            //    yIntercept = (int)(position.Y + (position.X * slope));
+            //    slope *= -1;
+            //}
 
             if ((position.X + position.Width) > Updater.viewport.Width)      //Hits the right wall
             {
@@ -80,6 +81,7 @@ namespace PongRemake
             { 
                 if (player.collisionBoxes[i].Intersects(ball.position))
                 {
+                        //player.PlayCollisionSound();
                         SwitchDirection();
                         slope = deflectionSlopes[i];
                         yIntercept = (int)(position.Y - (slope * position.X));
@@ -88,14 +90,35 @@ namespace PongRemake
             }
         }
 
-        public void Destroy(bool completelyDestroy)
+        public void CheckPastPlayer(Player leftSide, Player rightSide)
         {
-            isAlive = false;
+            if ((position.X + position.Width + 5 ) < 0)     //Goes beyond leftSide player (playerOne)                             
+            {
+                rightSide.score += 1;
+                isAlive = false;
+                //TODO: play sound for player scoring
+            }
+
+            if ((position.X + 5) > GameBase.monitorWidth)   //Goes beyond rightSide player (playerTwo)
+            {
+                leftSide.score += 1;
+                isAlive = false;
+                //TODO: play sound for player scoring
+            }
         }
 
         public void Reset()
         {
-
+            float[] randomSlopes = new float[] { -.8f, -.5f, -.15f, .15f, .5f, .8f }; 
+            Random rand = new Random();
+            position.X = rand.Next((GameBase.monitorWidth / 2) - ((GameBase.monitorWidth / 4) / 2), (GameBase.monitorWidth / 2) + ((GameBase.monitorWidth / 4) / 4));
+            position.Y = rand.Next((GameBase.monitorHeight / 2) - ((GameBase.monitorHeight / 4) / 2), (GameBase.monitorHeight / 2) + ((GameBase.monitorHeight / 4) / 4));
+            slope = randomSlopes[rand.Next(0, 6)];
+            yIntercept = (int)(position.Y - (position.X * slope));
+            if (rand.NextDouble() > 0.5)
+                movingRight = true;
+            else
+                movingRight = false;
         }
 
         public void SwitchDirection()
