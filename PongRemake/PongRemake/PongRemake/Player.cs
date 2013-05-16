@@ -27,14 +27,14 @@ namespace PongRemake
         {
             this.name = name;
             this.score = 0;
-            this.position = new Rectangle(100, 100, 26, Updater.viewport.Height/5);
+            this.position = new Rectangle(300, 300, 26, Updater.viewport.Height/5);
             this.playerIndex = playerIndex;
             this.isAI = isAI;
             this.color = color;
             this.collisionBoxes = new Rectangle[6];
             for (int i = 0; i < 6; i++)
             {
-                this.collisionBoxes[i] = new Rectangle(position.X, (position.Y/6) * (i+1), position.Width, position.Height / 6);
+                this.collisionBoxes[i] = new Rectangle(position.X + position.Width / 2, position.Y + ((position.Height / 6) * i), position.Width / 2, position.Height / 6);
             }
         }
 
@@ -57,7 +57,7 @@ namespace PongRemake
         {
             for (int i = 0; i < 6; i++)
             {
-                this.collisionBoxes[i] = new Rectangle(position.X + position.Width / 2, position.Y + ((position.Height / 6) * i), position.Width / 2, position.Height / 6);
+                this.collisionBoxes[i] = new Rectangle(position.X + ((position.Width / 4) * 3), position.Y + ((position.Height / 6) * i), position.Width / 4, position.Height / 6);
             }
         }
     }

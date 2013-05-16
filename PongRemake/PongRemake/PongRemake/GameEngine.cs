@@ -18,18 +18,24 @@ namespace PongRemake
             playerTwo = new Player("Player 2", PlayerIndex.Two, true, Color.White);          //Change to get name and color from options/preferences
             ball = new PongBall();
         }
-
+        public int timer = 0;
         public void Update()
         {
-            playerOne.Update();
-            playerTwo.Update();
-            ball.CheckPlayerCollision(playerOne);
-            ball.CheckPlayerCollision(playerTwo);
-            ball.Update();
-            if (!ball.isAlive)
-            { 
+            if (timer != 60)
+                timer++;
+            else
+            {
+                ball.Update();
+                playerOne.Update();
+                //playerTwo.Update();
+                ball.CheckPlayerCollision(playerOne, ball);
+                //ball.CheckPlayerCollision(playerTwo, ball);
                 
-            }    
+                if (!ball.isAlive)
+                {
+
+                }
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ namespace PongRemake
 
         public PongBall()
         {
-            position = new Rectangle(30, GameBase.monitorHeight / 2, 25, 25);
+            position = new Rectangle(30, GameBase.monitorHeight, ((GameBase.monitorHeight / 5) / 6) - 12, ((GameBase.monitorHeight / 5) / 6) - 12);
             slope = 0.5f;
             speed = 12;
             movingRight = true;
@@ -59,14 +59,14 @@ namespace PongRemake
 
             if (position.X < 0)                                  //Hits the left wall
             {
-                movingRight = true;
+                SwitchDirection();
                 yIntercept = (int)(position.Y + (position.X * slope));
                 slope *= -1;
             }
 
             if ((position.X + position.Width) > Updater.viewport.Width)      //Hits the right wall
             {
-                movingRight = false;
+                SwitchDirection();
                 yIntercept = (int)(position.Y + (position.X * slope));
                 slope *= -1;
             }
@@ -74,12 +74,16 @@ namespace PongRemake
 
         public void CheckPlayerCollision(Player player, PongBall ball)
         {
-
+            Random rand = new Random();
+            float[] deflectionSlopes = new float[] { -.8f, -.5f, -.15f, .15f, .5f, .8f }; 
             for (int i = 0; i < 6; i++)
             { 
-                if (player.collisionBoxes[i].Contains(ball.position))
+                if (player.collisionBoxes[i].Intersects(ball.position))
                 {
-
+                        SwitchDirection();
+                        slope = deflectionSlopes[i];
+                        yIntercept = (int)(position.Y - (slope * position.X));
+                        break;
                 }
             }
         }
@@ -92,6 +96,14 @@ namespace PongRemake
         public void Reset()
         {
 
+        }
+
+        public void SwitchDirection()
+        {
+            if (movingRight)
+                movingRight = false;
+            else
+                movingRight = true;
         }
     }
 }
