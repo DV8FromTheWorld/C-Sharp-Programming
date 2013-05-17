@@ -56,7 +56,6 @@ namespace PongRemake
         public static void GamePlayingScreen(float transparency, bool applyTransparency)
         {
             Updater.gameEngine.Draw(spriteBatch);
-            
         }
 
         public static void OptionsScreen() { OptionsScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
@@ -91,8 +90,8 @@ namespace PongRemake
 
         public static void Debug()
         {
-            spriteBatch.DrawString(myFont, "X: " + Updater.mouse.X + "  Y: " + Updater.mouse.Y, new Vector2(100, 100), Color.White);
-            spriteBatch.DrawString(myFont, "R : " + Color.Red.R + "  G: " + Color.Red.G + "  B: " + Color.Red.B + "  A: " + Color.Red.A, new Vector2(100, 150), Color.White);
+            //spriteBatch.DrawString(myFont, "X: " + Updater.mouse.X + "  Y: " + Updater.mouse.Y, new Vector2(100, 100), Color.White);
+            //spriteBatch.DrawString(myFont, "R : " + Color.Red.R + "  G: " + Color.Red.G + "  B: " + Color.Red.B + "  A: " + Color.Red.A, new Vector2(100, 150), Color.White);
         }
 
         public static void FadeChangeDraw()

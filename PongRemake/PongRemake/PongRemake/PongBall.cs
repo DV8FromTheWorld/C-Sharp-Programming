@@ -12,6 +12,7 @@ namespace PongRemake
         public Rectangle position;
         public int speed;
         public bool isAlive;
+        public bool drawBall;
 
         public Texture2D texture
         {
@@ -34,6 +35,8 @@ namespace PongRemake
         {
             if (isAlive)
             {
+                if (!drawBall)
+                    drawBall = true;
                 if (movingRight)
                     position.X += speed;
                 else
@@ -41,6 +44,8 @@ namespace PongRemake
                 position.Y = (int)(position.X * slope) + yIntercept;
                 CheckWallCollision();
             }
+            else
+                drawBall = false;
         }
 
         private void CheckWallCollision()
@@ -65,12 +70,12 @@ namespace PongRemake
             //    slope *= -1;
             //}
 
-            if ((position.X + position.Width) > Updater.viewport.Width)      //Hits the right wall
-            {
-                SwitchDirection();
-                yIntercept = (int)(position.Y + (position.X * slope));
-                slope *= -1;
-            }
+            //if ((position.X + position.Width) > Updater.viewport.Width)      //Hits the right wall
+            //{
+            //    SwitchDirection();
+            //    yIntercept = (int)(position.Y + (position.X * slope));
+            //    slope *= -1;
+            //}
         }
 
         public void CheckPlayerCollision(Player player, PongBall ball)
@@ -81,11 +86,15 @@ namespace PongRemake
             { 
                 if (player.collisionBoxes[i].Intersects(ball.position))
                 {
-                        //player.PlayCollisionSound();
-                        SwitchDirection();
+                    //player.PlayCollisionSound();
+                    SwitchDirection();
+                    if (player.leftSidePlayer)
                         slope = deflectionSlopes[i];
-                        yIntercept = (int)(position.Y - (slope * position.X));
-                        break;
+                    else
+                        slope = -deflectionSlopes[i];
+                    
+                    yIntercept = (int)(position.Y - (slope * position.X));
+                    break;
                 }
             }
         }
@@ -96,6 +105,7 @@ namespace PongRemake
             {
                 rightSide.score += 1;
                 isAlive = false;
+                drawBall = false;
                 //TODO: play sound for player scoring
             }
 
@@ -103,6 +113,7 @@ namespace PongRemake
             {
                 leftSide.score += 1;
                 isAlive = false;
+                drawBall = false;
                 //TODO: play sound for player scoring
             }
         }
@@ -119,6 +130,7 @@ namespace PongRemake
                 movingRight = true;
             else
                 movingRight = false;
+            isAlive = true;
         }
 
         public void SwitchDirection()
