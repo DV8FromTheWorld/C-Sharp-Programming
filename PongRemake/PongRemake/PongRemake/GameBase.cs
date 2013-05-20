@@ -88,7 +88,7 @@ namespace PongRemake
             Updater.mouse = Mouse.GetState();
             Updater.pad1 = GamePad.GetState(PlayerIndex.One);
             Updater.pad2 = GamePad.GetState(PlayerIndex.Two);
-            if (Updater.kbCurrent.IsKeyDown(Keys.Escape))
+            if (Updater.kbCurrent.IsKeyDown(Keys.Back))
                 this.Exit();
             if (Updater.fadeChange)
             {

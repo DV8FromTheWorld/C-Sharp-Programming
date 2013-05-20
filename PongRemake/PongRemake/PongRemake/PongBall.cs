@@ -14,6 +14,8 @@ namespace PongRemake
         public bool isAlive;
         public bool drawBall;
 
+        public int collisionCooldown;
+
         public Texture2D texture
         {
             get { return GameBase.ball; }
@@ -29,6 +31,7 @@ namespace PongRemake
             Reset();
             speed = 12;
             isAlive = true;
+            collisionCooldown = 0;
         }
 
         public void Update()
@@ -83,19 +86,30 @@ namespace PongRemake
             Random rand = new Random();
             float[] deflectionSlopes = new float[] { -.8f, -.5f, -.15f, .15f, .5f, .8f }; 
             for (int i = 0; i < 6; i++)
-            { 
-                if (player.collisionBoxes[i].Intersects(ball.position))
+            {
+                if (collisionCooldown == 0)
                 {
-                    //player.PlayCollisionSound();
-                    SwitchDirection();
-                    if (player.leftSidePlayer)
-                        slope = deflectionSlopes[i];
-                    else
-                        slope = -deflectionSlopes[i];
-                    
-                    yIntercept = (int)(position.Y - (slope * position.X));
-                    break;
+                    if (player.collisionBoxes[i].Intersects(ball.position))
+                    {
+                        //player.PlayCollisionSound();
+                        SwitchDirection();
+                        if (player.leftSidePlayer)
+                            slope = deflectionSlopes[i];
+                        else
+                            slope = -deflectionSlopes[i];
+
+                        yIntercept = (int)(position.Y - (slope * position.X));
+                        collisionCooldown++;
+                        break;
+                    }
                 }
+                else
+                {
+                    collisionCooldown++;
+                    if (collisionCooldown >= 60)
+                        collisionCooldown = 0;
+                }
+                    
             }
         }
 

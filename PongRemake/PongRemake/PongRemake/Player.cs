@@ -53,7 +53,7 @@ namespace PongRemake
                 {
                     if (Updater.kbCurrent.IsKeyDown(Keys.Escape) && Updater.kbOld.IsKeyUp(Keys.Escape))
                     {
-                        //TODO: Pause screen
+                        Updater.SwitchScreenNoFade(GameScreen.PAUSED);
                     }
                 }
             }

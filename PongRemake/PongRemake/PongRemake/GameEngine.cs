@@ -41,7 +41,6 @@ namespace PongRemake
                 }
                 else
                 { 
-                    //if (
                     ////TODO: Play sound for scoring a point
                     playerOne.ResetPosition();
                     playerTwo.ResetPosition();
@@ -67,6 +66,7 @@ namespace PongRemake
             }
             spriteBatch.DrawString(Drawing.myFont, playerOne.score.ToString(), playerOne.scorePos, Color.White);
             spriteBatch.DrawString(Drawing.myFont, playerTwo.score.ToString(), playerTwo.scorePos, Color.White);
+            spriteBatch.DrawString(Drawing.myFont, ball.collisionCooldown.ToString(), new Vector2(20,20), Color.White);
         }
     }
 }

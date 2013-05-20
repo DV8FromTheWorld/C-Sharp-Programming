@@ -13,7 +13,7 @@ namespace PongRemake
 
         public void MovePlayer(Player player, PongBall ball)
         {
-            int speed = ball.speed/2+2;
+            int speed = ball.speed/2+3;
             int playerTopPoint = player.position.Y;
             int playerBottomPoint = player.position.Y + player.position.Height;
             if (!((ball.position.Y > playerTopPoint) && (ball.position.Y < playerBottomPoint)))

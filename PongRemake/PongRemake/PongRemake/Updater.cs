@@ -113,6 +113,10 @@ namespace PongRemake
         {
             for (int i = 0; i < 4; i++)
                 Colors.pauseScreenColors[i] = Color.White;
+            if (kbCurrent.IsKeyDown(Keys.Escape) && kbOld.IsKeyUp(Keys.Escape)) //Pressing ESC leaves pause menu and resumes game
+            {
+                Updater.SwitchScreenNoFade(GameScreen.PLAYING);
+            }
             if (pauseScreenTextRec[0].Contains(mouse.X, mouse.Y))        //Text.PAUSE.Resume
             {
                 Colors.pauseScreenColors[0] = Color.Red;
@@ -122,8 +126,8 @@ namespace PongRemake
             else if (pauseScreenTextRec[1].Contains(mouse.X, mouse.Y))   //Text.PAUSE.Restart
             {
                 Colors.pauseScreenColors[1] = Color.Red;
-                //if (mouse.LeftButton == ButtonState.Pressed)
-                //TODO : Restart 
+                if (mouse.LeftButton == ButtonState.Pressed)
+                    StartNewGame();
             }
             else if (pauseScreenTextRec[2].Contains(mouse.X, mouse.Y))   //Text.PAUSE.Options
             {
@@ -134,10 +138,12 @@ namespace PongRemake
             else if (pauseScreenTextRec[3].Contains(mouse.X, mouse.Y))  //Text.Pause.EndGame
             {
                 Colors.pauseScreenColors[3] = Color.Red;
-               // if (mouse.LeftButton == ButtonState.Pressed)
-                //TODO : End game
+                if (mouse.LeftButton == ButtonState.Pressed)
+                {
+                    SwitchScreen(GameScreen.TITLE);
+                    gameEngine = null;
+                }
             }
-
         }
 
         public static void OptionsScreen()
@@ -149,6 +155,8 @@ namespace PongRemake
         {
             for (int i = 0; i < 3; i++)
                 Colors.quitScreenColors[i] = Color.White;
+            if (kbCurrent.IsKeyDown(Keys.Escape) && kbOld.IsKeyDown(Keys.Escape))
+                SwitchScreen(GameScreen.TITLE);
             if (quitScreenTextRec[0].Contains(mouse.X, mouse.Y))  //Text.QUIT.Yes
             {
                 Colors.quitScreenColors[0] = Color.Red;
