@@ -83,7 +83,7 @@ namespace PongRemake
         public void ResetPosition()
         {
             int width = 26;
-            int height = Updater.viewport.Height / 5;
+            int height = GameBase.monitorHeight / 5;
             if (leftSidePlayer)
                 this.position = new Rectangle(GameBase.monitorWidth / 16, GameBase.monitorHeight / 2 - height / 2, width, height);
             else

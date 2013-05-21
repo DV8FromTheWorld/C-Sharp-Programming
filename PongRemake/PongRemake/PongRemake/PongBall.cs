@@ -13,6 +13,7 @@ namespace PongRemake
         public int speed;
         public bool isAlive;
         public bool drawBall;
+        public Color color;
 
         public int collisionCooldown;
 
@@ -32,6 +33,7 @@ namespace PongRemake
             speed = 12;
             isAlive = true;
             collisionCooldown = 0;
+            color = Color.White;
         }
 
         public void Update()

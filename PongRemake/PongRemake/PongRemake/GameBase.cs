@@ -32,7 +32,7 @@ namespace PongRemake
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = monitorWidth;
             graphics.PreferredBackBufferHeight = monitorHeight;
-            graphics.IsFullScreen = true;
+           // graphics.IsFullScreen = true;
             graphics.ApplyChanges();
             IsMouseVisible = true;
             Content.RootDirectory = "Content";
@@ -46,7 +46,9 @@ namespace PongRemake
         /// </summary>
         protected override void Initialize()
         {
+            
             Drawing.myFont = Content.Load<SpriteFont>("myFont");
+            Options.Load();
             Updater.viewport = graphics.GraphicsDevice.Viewport;
             Updater.InitializeVariables();
             Updater.currentRendering = GameScreen.TITLE;
@@ -86,8 +88,8 @@ namespace PongRemake
         {
             Updater.kbCurrent = Keyboard.GetState();
             Updater.mouse = Mouse.GetState();
+            Updater.mousePos = new Point(Updater.mouse.X, Updater.mouse.Y);
             Updater.pad1 = GamePad.GetState(PlayerIndex.One);
-            Updater.pad2 = GamePad.GetState(PlayerIndex.Two);
             if (Updater.kbCurrent.IsKeyDown(Keys.Back))
                 this.Exit();
             if (Updater.fadeChange)
@@ -103,7 +105,7 @@ namespace PongRemake
                         IsMouseVisible = true;
                         break;
                     case GameScreen.OPTIONS:
-                        Updater.OptionsScreen();
+                        Options.Update();
                         IsMouseVisible = true;
                         break;
                     case GameScreen.PAUSED:
@@ -124,7 +126,6 @@ namespace PongRemake
             }
             Updater.kbOld = Updater.kbCurrent;
             Updater.padOld1 = Updater.pad1;
-            Updater.padOld2 = Updater.pad2;
             base.Update(gameTime);
         }
 

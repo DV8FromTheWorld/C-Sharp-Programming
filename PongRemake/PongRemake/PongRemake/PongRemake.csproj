@@ -115,6 +115,7 @@
     <Compile Include="Drawing.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="GameScreen.cs" />
+    <Compile Include="Options.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PongBall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

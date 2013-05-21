@@ -13,79 +13,38 @@ namespace PongRemake
         public static SpriteBatch spriteBatch;
         public static SpriteFont myFont;
 
-        public static void TitleScreen() { TitleScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
-        public static void TitleScreen(float transparency) { TitleScreen(transparency, true); }
-        public static void TitleScreen(float transparency, bool applyTransparency)
+        public static void TitleScreen() { TitleScreen(1.0f); }
+        public static void TitleScreen(float transparency)
         {
-            if (applyTransparency)
-            {
-                spriteBatch.DrawString(myFont, Text.TITLE.Start, Updater.titleScreenTextPos[0], Colors.titleScreenColors[0] * transparency);
-                spriteBatch.DrawString(myFont, Text.TITLE.Options, Updater.titleScreenTextPos[1], Colors.titleScreenColors[1] * transparency);
-                spriteBatch.DrawString(myFont, Text.TITLE.Quit, Updater.titleScreenTextPos[2], Colors.titleScreenColors[2] * transparency);
-            }
-            else
-            {
-                spriteBatch.DrawString(myFont, Text.TITLE.Start, Updater.titleScreenTextPos[0], Colors.titleScreenColors[0]);
-                spriteBatch.DrawString(myFont, Text.TITLE.Options, Updater.titleScreenTextPos[1], Colors.titleScreenColors[1]);
-                spriteBatch.DrawString(myFont, Text.TITLE.Quit, Updater.titleScreenTextPos[2], Colors.titleScreenColors[2]);
-            }
+            spriteBatch.DrawString(myFont, Text.TITLE.Start, Updater.titleScreenTextPos[0], Colors.titleScreenColors[0] * transparency);
+            spriteBatch.DrawString(myFont, Text.TITLE.Options, Updater.titleScreenTextPos[1], Colors.titleScreenColors[1] * transparency);
+            spriteBatch.DrawString(myFont, Text.TITLE.Quit, Updater.titleScreenTextPos[2], Colors.titleScreenColors[2] * transparency);
         }
 
-        public static void PauseScreen() { PauseScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
-        public static void PauseScreen(float transparency) { PauseScreen(transparency, true); }
-        public static void PauseScreen(float transparency, bool applyTransparency)
+        public static void PauseScreen() { PauseScreen(1.0f); } 
+        public static void PauseScreen(float transparency)
         {
-            if (applyTransparency)
-            {
-                spriteBatch.DrawString(myFont, Text.PAUSE.Resume, Updater.pauseScreenTextPos[0], Colors.pauseScreenColors[0] * transparency);
-                spriteBatch.DrawString(myFont, Text.PAUSE.Restart, Updater.pauseScreenTextPos[1], Colors.pauseScreenColors[1] * transparency);
-                spriteBatch.DrawString(myFont, Text.PAUSE.Options, Updater.pauseScreenTextPos[2], Colors.pauseScreenColors[2] * transparency);
-                spriteBatch.DrawString(myFont, Text.PAUSE.EndGame, Updater.pauseScreenTextPos[3], Colors.pauseScreenColors[3] * transparency);
-            }
-            else
-            {
-                spriteBatch.DrawString(myFont, Text.PAUSE.Resume, Updater.pauseScreenTextPos[0], Colors.pauseScreenColors[0]);
-                spriteBatch.DrawString(myFont, Text.PAUSE.Restart, Updater.pauseScreenTextPos[1], Colors.pauseScreenColors[1]);
-                spriteBatch.DrawString(myFont, Text.PAUSE.Options, Updater.pauseScreenTextPos[2], Colors.pauseScreenColors[2]);
-                spriteBatch.DrawString(myFont, Text.PAUSE.EndGame, Updater.pauseScreenTextPos[3], Colors.pauseScreenColors[3]);
-            }
+            spriteBatch.DrawString(myFont, Text.PAUSE.Resume, Updater.pauseScreenTextPos[0], Colors.pauseScreenColors[0] * transparency);
+            spriteBatch.DrawString(myFont, Text.PAUSE.Restart, Updater.pauseScreenTextPos[1], Colors.pauseScreenColors[1] * transparency);
+            spriteBatch.DrawString(myFont, Text.PAUSE.Options, Updater.pauseScreenTextPos[2], Colors.pauseScreenColors[2] * transparency);
+            spriteBatch.DrawString(myFont, Text.PAUSE.EndGame, Updater.pauseScreenTextPos[3], Colors.pauseScreenColors[3] * transparency);
         }
 
-        public static void GamePlayingScreen() { GamePlayingScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
-        public static void GamePlayingScreen(float transparency) { GamePlayingScreen(transparency, true); }
-        public static void GamePlayingScreen(float transparency, bool applyTransparency)
+        public static void GamePlayingScreen() { GamePlayingScreen(1.0f); }
+        public static void GamePlayingScreen(float transparency) { Updater.gameEngine.Draw(spriteBatch); }
+
+        public static void OptionsScreen() { OptionsScreen(1.0f); } 
+        public static void OptionsScreen(float transparency)
         {
-            Updater.gameEngine.Draw(spriteBatch);
+            Options.Draw(spriteBatch, transparency);   
         }
 
-        public static void OptionsScreen() { OptionsScreen(1.0f, false); }  //The 1.0f has no use and is just a place holder due to the given false
-        public static void OptionsScreen(float transparency) { OptionsScreen(transparency, true); }
-        public static void OptionsScreen(float transparency, bool applyTransparency)
+        public static void QuitScreen() { QuitScreen(1.0f); }
+        public static void QuitScreen(float transparency)
         {
-            if (applyTransparency)
-            {
-
-            }
-
-            
-        }
-
-        public static void QuitScreen() { QuitScreen(1.0f, false); }    //The 1.0f has no use and is just a place holder due to the given false
-        public static void QuitScreen(float transparency) { QuitScreen(transparency, true); }
-        public static void QuitScreen(float transparency, bool applyTransparency)
-        {
-            if (applyTransparency)
-            {
                 spriteBatch.DrawString(myFont, Text.QUIT.Yes, Updater.quitScreenTextPos[0], Colors.quitScreenColors[0] * transparency);
                 spriteBatch.DrawString(myFont, Text.QUIT.No, Updater.quitScreenTextPos[1], Colors.quitScreenColors[1] * transparency);
                 spriteBatch.DrawString(myFont, Text.QUIT.QuitMessage, Updater.quitScreenTextPos[2], Colors.quitScreenColors[2] * transparency);
-            }
-            else
-            {
-                spriteBatch.DrawString(myFont, Text.QUIT.Yes, Updater.quitScreenTextPos[0], Colors.quitScreenColors[0]);
-                spriteBatch.DrawString(myFont, Text.QUIT.No, Updater.quitScreenTextPos[1], Colors.quitScreenColors[1]);
-                spriteBatch.DrawString(myFont, Text.QUIT.QuitMessage, Updater.quitScreenTextPos[2], Colors.quitScreenColors[2]);
-            }
         }
 
         public static void Debug()

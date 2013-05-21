@@ -1,0 +1,7 @@
+PLEASE DO NOT MANUALLY EDIT THIS FILE
+DOING SO COULD CAUSE DELETION OF SETTINGS
+----------------------------------------
+[type="playerName";value="Player One";]
+[type="playerColor";value="255:255:255:";]
+[type="controllerEnabled";value="False";]
+[type="rainbowBallEnabled";value="False";]

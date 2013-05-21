@@ -16,7 +16,7 @@ namespace PongRemake
 
         public GameEngine()
         {
-            playerOne = new Player("Player 1", PlayerIndex.One, false, Color.White, true);         //Change to get name and color from options/preferences
+            playerOne = new Player("Player 1", PlayerIndex.One, false, Options.playerColor, true);         //Change to get name and color from options/preferences
             playerTwo = new Player("Player 2", PlayerIndex.Two, true, Color.White, false);          //Change to get name and color from options/preferences
             ball = new PongBall();
             multiplayer = false;
@@ -53,7 +53,7 @@ namespace PongRemake
         public void Draw(SpriteBatch spriteBatch)
         {
             if (ball.drawBall)
-                spriteBatch.Draw(ball.texture, ball.position, Color.White);
+                spriteBatch.Draw(ball.texture, ball.position, ball.color);
             
             spriteBatch.Draw(playerOne.texture, playerOne.position, playerOne.color);
             spriteBatch.Draw(playerTwo.texture, playerTwo.position, playerTwo.color);
@@ -66,7 +66,6 @@ namespace PongRemake
             }
             spriteBatch.DrawString(Drawing.myFont, playerOne.score.ToString(), playerOne.scorePos, Color.White);
             spriteBatch.DrawString(Drawing.myFont, playerTwo.score.ToString(), playerTwo.scorePos, Color.White);
-            spriteBatch.DrawString(Drawing.myFont, ball.collisionCooldown.ToString(), new Vector2(20,20), Color.White);
         }
     }
 }

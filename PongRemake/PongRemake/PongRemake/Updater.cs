@@ -15,11 +15,10 @@ namespace PongRemake
         public static KeyboardState kbOld;
 
         public static GamePadState pad1;
-        public static GamePadState pad2;
         public static GamePadState padOld1;
-        public static GamePadState padOld2;
 
         public static MouseState mouse;
+        public static Point mousePos;
 
         public static bool fadeChange;
 
@@ -144,11 +143,6 @@ namespace PongRemake
                     gameEngine = null;
                 }
             }
-        }
-
-        public static void OptionsScreen()
-        {
-
         }
 
         public static void QuitScreen()
