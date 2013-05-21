@@ -32,15 +32,17 @@ namespace PongRemake
         private static Vector2[] controllerTextPos;
         private static Vector2[] ballTextPos;
 
-        private static float fontSizeIncrease;
+        private static float[,] fontSizeIncrease;
+
+        private static bool[,] controlsEnlarged;
 
         private static Rectangle saveRec;
         private static Rectangle cancelRec;
         private static Rectangle resetRec;
 
-        private static Rectangle[] redControlsRec;
-        private static Rectangle[] greenControlsRec;
-        private static Rectangle[] blueControlsRec;
+        private static Rectangle[,] paddleColorControlsRec;
+
+        private static Color[,] colorChangerControls;
 
         public static void Load()
         {
@@ -58,21 +60,21 @@ namespace PongRemake
 
         private static void Initalize()
         {
-            fontSizeIncrease = 1.5f;
+            fontSizeIncrease = new float[3, 2] { { 1.5f, 1.5f }, { 1.5f, 1.5f }, { 1.5f, 1.5f } };
             controllerTextPos = new Vector2[] { new Vector2(20, 100), new Vector2(300, 100), new Vector2(700, 100) };
             ballTextPos = new Vector2[] { new Vector2(20, 150), new Vector2(300, 150), new Vector2(700, 150) };
             saveRec = new Rectangle((int)(GameBase.monitorWidth / 4 - Drawing.myFont.MeasureString("Save Options").X / 2), GameBase.monitorHeight / 5 * 4, (int)Drawing.myFont.MeasureString("Save Options").X, (int)Drawing.myFont.MeasureString("Save Options").Y);
             cancelRec = new Rectangle((int)(GameBase.monitorWidth / 4*2 - Drawing.myFont.MeasureString("Cancel").X / 2), GameBase.monitorHeight / 5 * 4, (int)Drawing.myFont.MeasureString("Cancel").X, (int)Drawing.myFont.MeasureString("Cancel Options").Y);
             resetRec = new Rectangle((int)(GameBase.monitorWidth / 4*3 - Drawing.myFont.MeasureString("Reset Options").X / 2), GameBase.monitorHeight / 5 * 4, (int)Drawing.myFont.MeasureString("Reset Options").X, (int)Drawing.myFont.MeasureString("Reset Options").Y);
-            redControlsRec = new Rectangle[2];
-            redControlsRec[0] = new Rectangle(GameBase.monitorWidth / 16 * 8, GameBase.monitorHeight / 16 * 7, (int)(Drawing.myFont.MeasureString("+").X * fontSizeIncrease), (int)(Drawing.myFont.MeasureString("+").Y * fontSizeIncrease));
-            redControlsRec[1] = new Rectangle(GameBase.monitorWidth / 16 * 8 + 40, GameBase.monitorHeight / 16 * 7, (int)(Drawing.myFont.MeasureString("-").X * fontSizeIncrease), (int)(Drawing.myFont.MeasureString("-").Y * fontSizeIncrease));
-            greenControlsRec = new Rectangle[2];
-            greenControlsRec[0] = new Rectangle(GameBase.monitorWidth / 16 * 8, GameBase.monitorHeight / 16 * 8, (int)(Drawing.myFont.MeasureString("+").X * fontSizeIncrease), (int)(Drawing.myFont.MeasureString("+").Y * fontSizeIncrease));
-            greenControlsRec[1] = new Rectangle(GameBase.monitorWidth / 16 * 8 + 40, GameBase.monitorHeight / 16 * 8, (int)(Drawing.myFont.MeasureString("-").X * fontSizeIncrease), (int)(Drawing.myFont.MeasureString("-").Y * fontSizeIncrease));
-            blueControlsRec = new Rectangle[2];
-            blueControlsRec[0] = new Rectangle(GameBase.monitorWidth / 16 * 8, GameBase.monitorHeight / 16 * 9, (int)(Drawing.myFont.MeasureString("+").X * fontSizeIncrease), (int)(Drawing.myFont.MeasureString("+").Y * fontSizeIncrease));
-            blueControlsRec[1] = new Rectangle(GameBase.monitorWidth / 16 * 8 + 40, GameBase.monitorHeight / 16 * 9, (int)(Drawing.myFont.MeasureString("-").X * fontSizeIncrease), (int)(Drawing.myFont.MeasureString("-").Y * fontSizeIncrease));
+            paddleColorControlsRec = new Rectangle[3, 2];
+            paddleColorControlsRec[0, 0] = new Rectangle(GameBase.monitorWidth / 16 * 8, GameBase.monitorHeight / 16 * 7 - 20, (int)(Drawing.myFont.MeasureString("+").X * fontSizeIncrease[0, 0]), (int)(Drawing.myFont.MeasureString("+").Y * fontSizeIncrease[0, 0]));
+            paddleColorControlsRec[0, 1] = new Rectangle(GameBase.monitorWidth / 16 * 8 + 40, GameBase.monitorHeight / 16 * 7 - 20, (int)(Drawing.myFont.MeasureString("-").X * fontSizeIncrease[0, 1]), (int)(Drawing.myFont.MeasureString("-").Y * fontSizeIncrease[0, 1]));
+            paddleColorControlsRec[1, 0] = new Rectangle(GameBase.monitorWidth / 16 * 8, GameBase.monitorHeight / 16 * 8, (int)(Drawing.myFont.MeasureString("+").X * fontSizeIncrease[1, 0]), (int)(Drawing.myFont.MeasureString("+").Y * fontSizeIncrease[1, 0]));
+            paddleColorControlsRec[1, 1] = new Rectangle(GameBase.monitorWidth / 16 * 8 + 40, GameBase.monitorHeight / 16 * 8, (int)(Drawing.myFont.MeasureString("-").X * fontSizeIncrease[1, 1]), (int)(Drawing.myFont.MeasureString("-").Y * fontSizeIncrease[1, 1]));
+            paddleColorControlsRec[2, 0] = new Rectangle(GameBase.monitorWidth / 16 * 8, GameBase.monitorHeight / 16 * 9 + 20, (int)(Drawing.myFont.MeasureString("+").X * fontSizeIncrease[2, 0]), (int)(Drawing.myFont.MeasureString("+").Y * fontSizeIncrease[2, 0]));
+            paddleColorControlsRec[2, 1] = new Rectangle(GameBase.monitorWidth / 16 * 8 + 40, GameBase.monitorHeight / 16 * 9 + 20, (int)(Drawing.myFont.MeasureString("-").X * fontSizeIncrease[2, 1]), (int)(Drawing.myFont.MeasureString("-").Y * fontSizeIncrease[2, 1]));
+            colorChangerControls = new Color[3, 2] { { Color.White, Color.White}, { Color.White, Color.White}, { Color.White, Color.White} };
+            controlsEnlarged = new bool[3, 2] { { false, false }, { false, false }, { false, false } };
             ResetTempVariables();
         }
 
@@ -116,9 +118,42 @@ namespace PongRemake
             #endregion
 
             #region Pong Paddle Color Controls
-
-
-
+            //Controls for changing the color of the Pong paddle
+            int colorTotal = tempPlayerColor.R + tempPlayerColor.G + tempPlayerColor.B;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    if (MouseOverOption(ref paddleColorControlsRec[i, j], ref colorChangerControls[i, j], ref fontSizeIncrease[i, j], ref controlsEnlarged[i, j]))
+                    {
+                        if (Updater.mouse.LeftButton == ButtonState.Pressed)
+                        {
+                            switch (i)
+                            { 
+                                case 0:
+                                    if ((j == 0) && tempPlayerColor.R < 255)
+                                        tempPlayerColor.R++;
+                                    else if ((j == 1) && tempPlayerColor.R > 0 && (colorTotal > 150))
+                                        tempPlayerColor.R--;
+                                    break;
+                                case 1:
+                                    if ((j == 0) && tempPlayerColor.G < 255)
+                                        tempPlayerColor.G++;
+                                    else if ((j == 1) && tempPlayerColor.G > 0 && (colorTotal > 150))
+                                        tempPlayerColor.G--;
+                                    break;
+                                case 2:
+                                    if ((j == 0) && tempPlayerColor.B < 255)
+                                        tempPlayerColor.B++;
+                                    else if ((j == 1) && tempPlayerColor.B > 0 && (colorTotal > 150))
+                                        tempPlayerColor.B--;
+                                    break;
+                            }
+                        }
+                    }
+                }
+            }
+            
             #endregion
 
             #region save, cancel and reset buttons
@@ -197,21 +232,21 @@ namespace PongRemake
 
             #region Pong Paddle Color Settings
             //Draws the controls for changing the colors of the Pong Paddle
-            spriteBatch.DrawString(Drawing.myFont, "Pong paddle color", new Vector2(GameBase.monitorWidth/2, GameBase.monitorHeight/8*3), Color.White * transparency);
-            spriteBatch.DrawString(Drawing.myFont, "RED:", new Vector2(GameBase.monitorWidth/16*9, GameBase.monitorHeight/16 * 7), Color.Red * transparency);
+            spriteBatch.DrawString(Drawing.myFont, "Pong paddle color", new Vector2(GameBase.monitorWidth / 2, GameBase.monitorHeight / 8 * 3), Color.White * transparency);
+            spriteBatch.DrawString(Drawing.myFont, "RED:", new Vector2(GameBase.monitorWidth / 16 * 9, GameBase.monitorHeight / 16 * 7 - 10), Color.Red * transparency);
             spriteBatch.DrawString(Drawing.myFont, "GREEN:", new Vector2(GameBase.monitorWidth / 16 * 9, GameBase.monitorHeight / 16 * 8), Color.Green * transparency);
-            spriteBatch.DrawString(Drawing.myFont, "BLUE:", new Vector2(GameBase.monitorWidth / 16 * 9, GameBase.monitorHeight / 16 * 9), Color.Blue * transparency);
+            spriteBatch.DrawString(Drawing.myFont, "BLUE:", new Vector2(GameBase.monitorWidth / 16 * 9, GameBase.monitorHeight / 16 * 9 + 10), Color.Blue * transparency);
 
-            spriteBatch.DrawString(Drawing.myFont, tempPlayerColor.R.ToString(), new Vector2((GameBase.monitorWidth / 16 * 10) + (GameBase.monitorWidth / 32), GameBase.monitorHeight / 16 * 7), Color.White * transparency);
+            spriteBatch.DrawString(Drawing.myFont, tempPlayerColor.R.ToString(), new Vector2((GameBase.monitorWidth / 16 * 10) + (GameBase.monitorWidth / 32), GameBase.monitorHeight / 16 * 7 - 10), Color.White * transparency);
             spriteBatch.DrawString(Drawing.myFont, tempPlayerColor.G.ToString(), new Vector2((GameBase.monitorWidth / 16 * 10) + (GameBase.monitorWidth / 32), GameBase.monitorHeight / 16 * 8), Color.White * transparency);
-            spriteBatch.DrawString(Drawing.myFont, tempPlayerColor.B.ToString(), new Vector2((GameBase.monitorWidth / 16 * 10) + (GameBase.monitorWidth / 32), GameBase.monitorHeight / 16 * 9), Color.White * transparency);
+            spriteBatch.DrawString(Drawing.myFont, tempPlayerColor.B.ToString(), new Vector2((GameBase.monitorWidth / 16 * 10) + (GameBase.monitorWidth / 32), GameBase.monitorHeight / 16 * 9 + 10), Color.White * transparency);
 
-            spriteBatch.DrawString(Drawing.myFont, "+", new Vector2(redControlsRec[0].X, redControlsRec[0].Y), Color.White * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease, SpriteEffects.None, 1.0f);
-            spriteBatch.DrawString(Drawing.myFont, "-", new Vector2(redControlsRec[1].X, redControlsRec[1].Y), Color.White * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease, SpriteEffects.None, 1.0f);
-            spriteBatch.DrawString(Drawing.myFont, "+", new Vector2(greenControlsRec[0].X, greenControlsRec[0].Y), Color.White * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease, SpriteEffects.None, 1.0f);
-            spriteBatch.DrawString(Drawing.myFont, "-", new Vector2(greenControlsRec[1].X, greenControlsRec[1].Y), Color.White * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease, SpriteEffects.None, 1.0f);
-            spriteBatch.DrawString(Drawing.myFont, "+", new Vector2(blueControlsRec[0].X, blueControlsRec[0].Y), Color.White * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease, SpriteEffects.None, 1.0f);
-            spriteBatch.DrawString(Drawing.myFont, "-", new Vector2(blueControlsRec[1].X, blueControlsRec[1].Y), Color.White * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease, SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(Drawing.myFont, "+", new Vector2(paddleColorControlsRec[0, 0].X, paddleColorControlsRec[0, 0].Y), colorChangerControls[0, 0] * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease[0, 0], SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(Drawing.myFont, "-", new Vector2(paddleColorControlsRec[0, 1].X, paddleColorControlsRec[0, 1].Y), colorChangerControls[0, 1] * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease[0, 1], SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(Drawing.myFont, "+", new Vector2(paddleColorControlsRec[1, 0].X, paddleColorControlsRec[1, 0].Y), colorChangerControls[1, 0] * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease[1, 0], SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(Drawing.myFont, "-", new Vector2(paddleColorControlsRec[1, 1].X, paddleColorControlsRec[1, 1].Y), colorChangerControls[1, 1] * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease[1, 1], SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(Drawing.myFont, "+", new Vector2(paddleColorControlsRec[2, 0].X, paddleColorControlsRec[2, 0].Y), colorChangerControls[2, 0] * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease[2, 0], SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(Drawing.myFont, "-", new Vector2(paddleColorControlsRec[2, 1].X, paddleColorControlsRec[2, 1].Y), colorChangerControls[2, 1] * transparency, 0.0f, new Vector2(0, 0), fontSizeIncrease[2, 1], SpriteEffects.None, 1.0f);
 
             spriteBatch.Draw(GameBase.playerBar, new Rectangle(GameBase.monitorWidth / 16 * 12, GameBase.monitorHeight / 16 * 7, 26, GameBase.monitorHeight / 5), tempPlayerColor * transparency);            
             #endregion
@@ -335,6 +370,7 @@ namespace PongRemake
             controllerEnabled = false;
             rainbowBallEnabled = false;
             ResetTempVariables();
+            SaveCurrentOptions();
         }
 
         private static void ResetTempVariables()
@@ -352,6 +388,35 @@ namespace PongRemake
             controllerEnabled = tempControllerEnabled;
             rainbowBallEnabled = tempRainbowBallEnabled;
             WriteToOptionsFile(true);
+        }
+
+        private static bool MouseOverOption(ref Rectangle rec, ref Color color, ref float textSize, ref bool enlarged)
+        {
+            if(rec.Contains(Updater.mousePos))
+            {
+                if (!enlarged)
+                {
+                    color = Color.Red;
+                    textSize = 2.0f;
+                    rec.Width = ((rec.Width / 3) * 4);
+                    rec.Height = ((rec.Height / 3) * 4);
+                    rec.X = rec.X - rec.Width/4/2;
+                    rec.Y = rec.Y - rec.Height/4/2;
+                    enlarged = true;
+                }
+                return true;
+            }
+            color = Color.White;
+            textSize = 1.5f;
+            if (enlarged)
+            {
+                rec.Width = ((rec.Width) / 4) * 3;
+                rec.Height = ((rec.Height) / 4) * 3;
+                rec.X = rec.X + rec.Width /3/2;
+                rec.Y = rec.Y + rec.Height / 3/2;
+                enlarged = false;
+            }
+            return false;
         }
     }
 }

@@ -7,15 +7,15 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLightContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLightContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLightContent\</RootDirectory>
+      <LoggerRootDirectory>\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\</LoggerRootDirectory>
+      <IntermediateDirectory>\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLightContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\MoodLight\MoodLight\MoodLight\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-02-01T20:02:48.8237727-05:00</Value>
+        <Value>2013-01-22T08:21:35.9539767-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

@@ -16,8 +16,8 @@ namespace PongRemake
 
         public GameEngine()
         {
-            playerOne = new Player("Player 1", PlayerIndex.One, false, Options.playerColor, true);         //Change to get name and color from options/preferences
-            playerTwo = new Player("Player 2", PlayerIndex.Two, true, Color.White, false);          //Change to get name and color from options/preferences
+            playerOne = new Player(false, true);
+            playerTwo = new Player(true, false);
             ball = new PongBall();
             multiplayer = false;
         }

@@ -11,10 +11,7 @@ namespace PongRemake
     class Player
     {
         private AI computer;
-        public String name;
-        public Color color;
         public Rectangle position;
-        public PlayerIndex playerIndex;
         public bool isAI;
         public bool leftSidePlayer;
         public Vector2 scorePos;
@@ -24,19 +21,25 @@ namespace PongRemake
         {
             get { return GameBase.playerBar; }
         }
+        public Color color
+        {
+            get { if (isAI) return Color.White; else return Options.playerColor; }
+        }
+        public String name
+        {
+            get { if (isAI) return "Computer"; else return Options.playerName; }
+        }
 
-        public Player(String name, PlayerIndex playerIndex, bool isAI, Color color, bool leftSidePlayer)
+        public Player(bool isAI, bool leftSidePlayer)
         {
             this.collisionBoxes = new Rectangle[6];
             this.leftSidePlayer = leftSidePlayer;
             ResetPosition();
-            this.name = name;
             this.score = 0;
-            this.playerIndex = playerIndex;
             this.isAI = isAI;
             if (isAI)
                 computer = new AI();
-            this.color = color;
+                
             if (leftSidePlayer)
                 scorePos = new Vector2((GameBase.monitorWidth / 4), GameBase.monitorHeight / 20);
             else

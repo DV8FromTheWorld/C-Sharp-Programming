@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\myFont.xnb</Output>
-      <Time>2013-05-15T16:47:44.6628401-04:00</Time>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2013-03-21T10:40:16.1346796-04:00</Time>
     </Item>
     <Item>
       <Source>Ball.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\Ball.xnb</Output>
-      <Time>2013-05-15T16:47:44.66084-04:00</Time>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\Ball.xnb</Output>
+      <Time>2013-05-15T10:20:25.9202726-04:00</Time>
     </Item>
     <Item>
       <Source>Paddle.bmp</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\Paddle.xnb</Output>
-      <Time>2013-05-15T16:47:44.6618401-04:00</Time>
+      <Output>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\Paddle.xnb</Output>
+      <Time>2013-05-15T12:45:50.1276582-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -34,39 +34,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemakeContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemakeContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemakeContent\</RootDirectory>
+      <LoggerRootDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\</LoggerRootDirectory>
+      <IntermediateDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemakeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-02-01T20:02:48.8237727-05:00</Value>
+        <Value>2013-01-22T08:21:35.9539767-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
