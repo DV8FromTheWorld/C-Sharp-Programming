@@ -16,3 +16,8 @@ C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\P
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\PongRemake.exe
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\PongRemake.pdb
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\obj\x86\Debug\PongRemake.pdb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.dll
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.Xna.dll
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.Xna.pdb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.pdb
+C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.xml

@@ -115,6 +115,7 @@
     <Compile Include="Drawing.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="GameScreen.cs" />
+    <Compile Include="MultiplayerEngine.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PongBall.cs" />
@@ -129,6 +130,14 @@
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\Lidgren XNA Extensions.csproj">
+      <Project>{2B661ABD-63A8-4916-A94B-034729231271}</Project>
+      <Name>Lidgren XNA Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\LIBRARIES\Lidgren.Network\Lidgren.Network\Lidgren.Network.csproj">
+      <Project>{49BA1C69-6104-41AC-A5D8-B54FA9F696E8}</Project>
+      <Name>Lidgren.Network</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PongRemakeContent\PongRemakeContent.contentproj">
       <Name>PongRemakeContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
