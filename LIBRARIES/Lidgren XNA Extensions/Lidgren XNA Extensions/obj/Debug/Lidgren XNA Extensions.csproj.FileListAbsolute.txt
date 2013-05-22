@@ -6,3 +6,11 @@ C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA E
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\obj\Debug\Lidgren.Network.Xna.dll
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\obj\Debug\Lidgren.Network.Xna.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\bin\Debug\Lidgren.Network.Xna.dll
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\bin\Debug\Lidgren.Network.Xna.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\bin\Debug\Lidgren.Network.dll
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\bin\Debug\Lidgren.Network.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\bin\Debug\Lidgren.Network.xml
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\obj\Debug\ResolveAssemblyReference.cache
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\obj\Debug\Lidgren.Network.Xna.dll
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren XNA Extensions\Lidgren XNA Extensions\obj\Debug\Lidgren.Network.Xna.pdb

@@ -4,3 +4,9 @@ C:\Users\Austin\Desktop\Lidgren-network-gen3\Lidgren.Network\bin\Debug\Lidgren.N
 C:\Users\Austin\Desktop\Lidgren-network-gen3\Lidgren.Network\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Austin\Desktop\Lidgren-network-gen3\Lidgren.Network\obj\Debug\Lidgren.Network.dll
 C:\Users\Austin\Desktop\Lidgren-network-gen3\Lidgren.Network\obj\Debug\Lidgren.Network.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren.Network\Lidgren.Network\bin\Debug\Lidgren.Network.XML
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren.Network\Lidgren.Network\bin\Debug\Lidgren.Network.dll
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren.Network\Lidgren.Network\bin\Debug\Lidgren.Network.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren.Network\Lidgren.Network\obj\Debug\ResolveAssemblyReference.cache
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren.Network\Lidgren.Network\obj\Debug\Lidgren.Network.dll
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\LIBRARIES\Lidgren.Network\Lidgren.Network\obj\Debug\Lidgren.Network.pdb

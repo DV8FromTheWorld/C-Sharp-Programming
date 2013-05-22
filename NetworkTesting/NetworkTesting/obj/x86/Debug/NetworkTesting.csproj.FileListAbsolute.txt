@@ -1,0 +1,14 @@
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\ResolveAssemblyReference.cache
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\NetworkTesting.Base.resources
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\NetworkTesting.Client.resources
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\NetworkTesting.Properties.Resources.resources
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\NetworkTesting.Server.resources
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\GenerateResource.read.1.tlog
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\GenerateResource.write.1.tlog
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\bin\Debug\NetworkTesting.exe
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\bin\Debug\NetworkTesting.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\bin\Debug\Lidgren.Network.dll
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\bin\Debug\Lidgren.Network.pdb
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\bin\Debug\Lidgren.Network.xml
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\NetworkTesting.exe
+\\itsvs3\LCSStudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTesting\obj\x86\Debug\NetworkTesting.pdb

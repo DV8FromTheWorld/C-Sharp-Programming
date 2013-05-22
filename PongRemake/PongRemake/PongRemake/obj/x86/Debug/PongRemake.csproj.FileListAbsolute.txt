@@ -21,3 +21,8 @@ C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\P
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.Xna.pdb
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.pdb
 C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.xml
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.dll
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.Xna.dll
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.Xna.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.pdb
+\\itsvs3\lcsstudents\GAKeener\My Documents\Visual Studio 2010\Projects C#\PongRemake\PongRemake\PongRemake\bin\x86\Debug\Lidgren.Network.xml

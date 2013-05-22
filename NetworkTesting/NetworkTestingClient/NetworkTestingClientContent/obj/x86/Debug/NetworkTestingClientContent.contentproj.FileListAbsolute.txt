@@ -1,1 +1,0 @@
-C:\Users\Austin\Documents\Visual Studio 2010\Projects C#\NetworkTesting\NetworkTestingClient\NetworkTestingClientContent\obj\x86\Debug\ResolveAssemblyReference.cache
